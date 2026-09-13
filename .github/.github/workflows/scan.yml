@@ -1,0 +1,154 @@
+name: Robinhood Contract Collector
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan Robinhood Chain
+        run: |
+          python <<'PY'
+          import json
+          import time
+          import urllib.request
+          from pathlib import Path
+
+          RPC = "https://rpc.mainnet.chain.robinhood.com"
+          STATE = Path("state.json")
+          OUTPUT = Path("candidates.json")
+
+          FACTORIES = [
+              "0x5fcc1df0dc020cf454e742e9a8ae2554c37a452c",
+              "0x62b33a039d289cbda50ebeb72fe4261449e61bcf",
+              "0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007",
+              "0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09",
+              "0x16cf6788b762ee8969744586ed16fc5705140dd7",
+              "0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862",
+              "0x22e99278308b393ea1260859b181ad7e78f5eeed",
+              "0x6e4910ea5a04376032f6564da9a9e4e88b7a87c1",
+              "0xe8cc4431adf8b5a847c113ef0c6af9043219cb37",
+              "0xd3f2cc1731b7fd17f28798835c2e02f0a1839a94",
+              "0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+              "0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+              "0x0000ffffbe8efe702c8703ae3477ff5de3d319c0",
+              "0x00004c4ccc709ef590f7c81102c0689f0263d4e9",
+              "0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d",
+              "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+          ]
+
+          IGNORE = set(FACTORIES) | {
+              "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+              "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          }
+
+          TRANSFER = "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ZERO = "0x" + "0" * 64
+
+          def rpc(method, params):
+              data = json.dumps({
+                  "jsonrpc": "2.0",
+                  "id": 1,
+                  "method": method,
+                  "params": params
+              }).encode()
+
+              req = urllib.request.Request(
+                  RPC,
+                  data=data,
+                  headers={"Content-Type": "application/json"}
+              )
+
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  result = json.load(r)
+
+              if "error" in result:
+                  raise Exception(result["error"])
+
+              return result["result"]
+
+          def load(path, default):
+              try:
+                  return json.loads(path.read_text())
+              except:
+                  return default
+
+          head = int(rpc("eth_blockNumber", []), 16)
+          state = load(STATE, {})
+
+          previous = state.get("last_block", head - 1500)
+
+          # overlap old blocks deliberately so temporary RPC failures
+          # don't permanently lose a launch
+          start = max(0, previous - 1500)
+
+          old = load(OUTPUT, [])
+          known = {x["address"].lower() for x in old if "address" in x}
+
+          found = {}
+
+          # Scan in small chunks
+          for frm in range(start, head + 1, 250):
+              to = min(head, frm + 249)
+
+              filt = {
+                  "fromBlock": hex(frm),
+                  "toBlock": hex(to),
+                  "topics": [TRANSFER, ZERO]
+              }
+
+              try:
+                  logs = rpc("eth_getLogs", [filt])
+              except Exception as e:
+                  print("range failed", frm, to, e)
+                  continue
+
+              for log in logs:
+                  address = log["address"].lower()
+
+                  if address in IGNORE or address in known:
+                      continue
+
+                  found[address] = {
+                      "address": address,
+                      "first_seen_block": int(log["blockNumber"], 16),
+                      "tx": log["transactionHash"],
+                      "source": "zero_address_mint",
+                      "collected_at": int(time.time())
+                  }
+
+          for row in sorted(found.values(),
+                            key=lambda x: x["first_seen_block"]):
+              if row["address"] not in known:
+                  old.append(row)
+                  known.add(row["address"])
+
+          OUTPUT.write_text(json.dumps(old[-10000:], indent=2) + "\n")
+
+          STATE.write_text(json.dumps({
+              "last_block": head,
+              "updated_at": int(time.time()),
+              "scan_start": start,
+              "scan_end": head
+          }, indent=2) + "\n")
+
+          print("new contracts:", len(found))
+          print("scanned:", start, "-", head)
+          PY
+
+      - name: Save results
+        run: |
+          git config user.name "Robinhood Scanner"
+          git config user.email "scanner@users.noreply.github.com"
+          git add candidates.json state.json
+          git diff --cached --quiet || git commit -m "Update Robinhood candidates"
+          git push

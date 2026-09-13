@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Robinhood Chain discovery collector v4.
+Robinhood Chain discovery collector v5.
 
 Fast, targeted discovery:
 - ERC-20 zero-address mint logs
@@ -22,9 +22,9 @@ RPC = "https://rpc.mainnet.chain.robinhood.com"
 STATE = Path("state.json")
 OUTPUT = Path("candidates.json")
 
-FIRST_RUN_LOOKBACK_BLOCKS = 300
-OVERLAP_BLOCKS = 200
-MAX_BLOCKS_PER_QUERY = 300
+FIRST_RUN_LOOKBACK_SECONDS = 30 * 60
+OVERLAP_SECONDS = 15 * 60
+MAX_BLOCKS_PER_QUERY = 500
 
 FACTORIES = [
     "0x5fcc1df0dc020cf454e742e9a8ae2554c37a452c",
@@ -81,7 +81,7 @@ def rpc(method, params, timeout=15):
         data=body,
         headers={
             "Content-Type": "application/json",
-            "User-Agent": "robinhood-scanner/4.0",
+            "User-Agent": "robinhood-scanner/5.0",
         },
     )
 
@@ -99,6 +99,27 @@ def load_json(path, default):
         return json.loads(path.read_text())
     except Exception:
         return default
+
+
+def block_timestamp(block_number):
+    block = rpc("eth_getBlockByNumber", [hex(block_number), False])
+    return int(block["timestamp"], 16)
+
+
+def find_block_at_or_before_timestamp(head, target_ts):
+    low = 0
+    high = head
+
+    while low < high:
+        mid = (low + high + 1) // 2
+        ts = block_timestamp(mid)
+
+        if ts <= target_ts:
+            low = mid
+        else:
+            high = mid - 1
+
+    return low
 
 
 def normalize_address(value):
@@ -232,19 +253,26 @@ def main():
     started = time.time()
 
     head = int(rpc("eth_blockNumber", []), 16)
+    head_ts = block_timestamp(head)
     state = load_json(STATE, {})
 
-    if "last_block" in state:
-        start = max(0, int(state["last_block"]) - OVERLAP_BLOCKS)
+    if "last_block_timestamp" in state:
+        target_ts = max(0, int(state["last_block_timestamp"]) - OVERLAP_SECONDS)
+        start = find_block_at_or_before_timestamp(head, target_ts)
         mode = "overlap"
     else:
-        start = max(0, head - FIRST_RUN_LOOKBACK_BLOCKS)
-        mode = "first_run"
+        # If upgrading from an older state file that lacks timestamps,
+        # establish a real 30-minute baseline on this run.
+        target_ts = max(0, head_ts - FIRST_RUN_LOOKBACK_SECONDS)
+        start = find_block_at_or_before_timestamp(head, target_ts)
+        mode = "baseline_30m"
 
     start = min(start, head)
+    start_ts = block_timestamp(start)
 
     print(f"Mode: {mode}")
     print(f"Scanning blocks {start}-{head}")
+    print(f"Window seconds: {head_ts - start_ts}")
 
     found = {}
 
@@ -339,14 +367,26 @@ def main():
 
     OUTPUT.write_text(json.dumps(rows[-10000:], indent=2) + "\n")
 
+    # Source-level unique counts make it easy to spot another noisy discovery path.
+    source_counts = {}
+    for row in found.values():
+        source = row.get("source", "unknown")
+        source_counts[source] = source_counts.get(source, 0) + 1
+
     state_out = {
         "last_block": head,
+        "last_block_timestamp": head_ts,
         "scan_start": start,
+        "scan_start_timestamp": start_ts,
         "scan_end": head,
+        "scan_end_timestamp": head_ts,
+        "scan_window_seconds": head_ts - start_ts,
         "mode": mode,
         "zero_mint_logs": len(mint_logs),
         "factory_logs": len(factory_logs),
         "uniswap_v4_initialize_logs": len(init_logs),
+        "unique_candidates_this_run": len(found),
+        "candidate_source_counts": source_counts,
         "new_candidates": new_count,
         "stored_candidates": len(rows),
         "polluted_rows_removed": removed_polluted,

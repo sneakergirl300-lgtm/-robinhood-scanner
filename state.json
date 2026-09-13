@@ -1,7 +1,14 @@
 {
-  "last_block": 61956950,
-  "scan_start": 61956850,
-  "scan_end": 61956950,
-  "updated_at_unix": 1789302501,
+  "last_block": 61967260,
+  "scan_start": 61956750,
+  "scan_end": 61967260,
+  "mode": "overlap",
+  "zero_mint_logs": 21566,
+  "factory_logs": 521,
+  "poolmanager_logs": 51159,
+  "new_candidates": 107628,
+  "stored_candidates": 107648,
+  "runtime_seconds": 40.37,
+  "updated_at_unix": 1789303584,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

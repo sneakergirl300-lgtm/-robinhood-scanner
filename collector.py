@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Robinhood Chain discovery collector v5.
+Robinhood Chain discovery collector v6.
 
 Fast, targeted discovery:
 - ERC-20 zero-address mint logs
@@ -81,7 +81,7 @@ def rpc(method, params, timeout=15):
         data=body,
         headers={
             "Content-Type": "application/json",
-            "User-Agent": "robinhood-scanner/5.0",
+            "User-Agent": "robinhood-scanner/6.0",
         },
     )
 
@@ -241,7 +241,7 @@ def clean_existing(rows):
 
         if (
             source == "zero_address_mint"
-            or source.startswith("factory_log:")
+            or source.startswith("factory_mint:")
             or source == "uniswap_v4_initialize"
         ):
             keep.append(row)
@@ -283,10 +283,23 @@ def main():
         head,
     )
 
+    erc20_mint_logs = []
+
     for log in mint_logs:
-        add(found, log.get("address"), log, "zero_address_mint")
+        topics = log.get("topics") or []
+        data = log.get("data") or "0x"
+
+        # ERC-20 Transfer has exactly 3 topics:
+        # signature, from, to. ERC-721 Transfer normally has 4.
+        # Value is a single 32-byte word in data.
+        raw_data = data[2:] if data.startswith("0x") else data
+
+        if len(topics) == 3 and len(raw_data) == 64:
+            erc20_mint_logs.append(log)
+            add(found, log.get("address"), log, "zero_address_mint")
 
     print(f"Zero-mint logs: {len(mint_logs)}")
+    print(f"ERC20-shaped zero-mint logs: {len(erc20_mint_logs)}")
 
     # 2) Known launchpad/factory activity.
     factory_logs = get_logs(
@@ -295,14 +308,33 @@ def main():
         head,
     )
 
-    for log in factory_logs:
-        emitter = normalize_address(log.get("address"))
-        source = f"factory_log:{emitter}"
+    # Factory logs are used as corroboration, not as free-form address extraction.
+    # If a known factory transaction also emitted an ERC-20 zero-address mint,
+    # relabel that token with the exact factory source.
+    mint_by_tx = {}
 
-        for address in extract_factory_addresses(log):
-            add(found, address, log, source)
+    for log in erc20_mint_logs:
+        tx = log.get("transactionHash")
+        token = normalize_address(log.get("address"))
+
+        if tx and token:
+            mint_by_tx.setdefault(tx.lower(), []).append((token, log))
+
+    corroborated_factory_tokens = 0
+
+    for log in factory_logs:
+        tx = (log.get("transactionHash") or "").lower()
+        emitter = normalize_address(log.get("address"))
+
+        if not tx or not emitter:
+            continue
+
+        for token, mint_log in mint_by_tx.get(tx, []):
+            add(found, token, mint_log, f"factory_mint:{emitter}")
+            corroborated_factory_tokens += 1
 
     print(f"Factory logs: {len(factory_logs)}")
+    print(f"Factory-corroborated token mints: {corroborated_factory_tokens}")
 
     # 3) ONLY new Uniswap v4 pools.
     init_logs = get_logs(
@@ -383,7 +415,9 @@ def main():
         "scan_window_seconds": head_ts - start_ts,
         "mode": mode,
         "zero_mint_logs": len(mint_logs),
+        "erc20_zero_mint_logs": len(erc20_mint_logs),
         "factory_logs": len(factory_logs),
+        "factory_corroborated_token_mints": corroborated_factory_tokens,
         "uniswap_v4_initialize_logs": len(init_logs),
         "unique_candidates_this_run": len(found),
         "candidate_source_counts": source_counts,

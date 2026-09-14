@@ -348,6 +348,11 @@ def report_token(t, state, now, risks):
     quotes.sort(key=lambda q:q["age_seconds"])
     conflict = len(quotes)>1 and max(Decimal(q["price_usdg"]) for q in quotes) / min(Decimal(q["price_usdg"]) for q in quotes) > Decimal("1.20")
     return {"address":t["address"], "status":gate["status"], "structural_gate":gate,
+            "classification":t.get("classification", "UNRESOLVED"),
+            "discovery_sources":[s for s in t.get("sources", []) if s],
+            "discovered_at":t.get("discovered_at"),
+            "first_seen_block":t.get("first_seen_block"),
+            "last_seen_block":t.get("last_seen_block"),
             "lane":t["lane"], "last_attempt":t["last_attempt"], "next_due":t["next_due"],
             "executed_price":quotes[0] if quotes and not conflict else None,
             "valuation_conflict":conflict, "valuation_sources":quotes,

@@ -1,16 +1,16 @@
 {
   "version": 3,
-  "generated_at": 1789411763,
+  "generated_at": 1789413429,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.288,
+  "runtime_seconds": 0.398,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789411745,
-  "collector_age_seconds": 18,
-  "universe_count": 26019,
+  "collector_updated_at": 1789413410,
+  "collector_age_seconds": 19,
+  "universe_count": 26474,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 11803,
+  "due_remaining": 11974,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
@@ -240,9 +240,10 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_MARKET",
+      "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize"
+        "uniswap_v4_initialize",
+        "zero_address_mint"
       ],
       "discovered_at": 1789411743,
       "first_seen_block": 63006285,

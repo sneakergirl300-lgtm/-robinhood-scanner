@@ -1,21 +1,21 @@
 {
   "version": 3,
-  "generated_at": 1789382434,
+  "generated_at": 1789382913,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.15,
+  "runtime_seconds": 0.295,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789381439,
-  "collector_age_seconds": 995,
-  "universe_count": 12140,
+  "collector_updated_at": 1789382901,
+  "collector_age_seconds": 12,
+  "universe_count": 12551,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 4747,
+  "due_remaining": 5219,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
     {
-      "address": "0xa3971453088260ceed978b0b2e28670d12c6f505",
+      "address": "0x0dea2233ff9f0cd17555db31938923441d0e695f",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -32,7 +32,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -49,7 +49,7 @@
       "last_error": null
     },
     {
-      "address": "0x71d94bcd5a96df02d67df70135fd3449f33329b9",
+      "address": "0xe1905e5815844ba2584c4921eea55a853aca00a8",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -66,7 +66,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -83,7 +83,7 @@
       "last_error": null
     },
     {
-      "address": "0xb4de5f5a975dad825bb10a203d2aeca05801099e",
+      "address": "0x3ccbdc1c69c887bc173f57ec0e7ebbbaedc2a492",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -100,7 +100,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -117,7 +117,7 @@
       "last_error": null
     },
     {
-      "address": "0x1660ac03f28558d0e0cd4cf6f1c2807a80ee582a",
+      "address": "0x8d55cd3bf3d1c47f6f6f1b4dd4b35b89ee8fe65c",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -134,7 +134,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -151,7 +151,7 @@
       "last_error": null
     },
     {
-      "address": "0xf13989dc59b1bb42bc2188cc22b76e7817849be5",
+      "address": "0xddcc376494507e802a12fd48f86db77fa4065c5b",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -168,7 +168,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -185,7 +185,41 @@
       "last_error": null
     },
     {
-      "address": "0x763b91f04f42ee00446fb9ed59a5dba674613cd9",
+      "address": "0xd9d674b04a72affe00e06385535eaac10b988fca",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "lane": "FOLLOWUP",
+      "last_attempt": 0,
+      "next_due": 1789382913,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0x862ba5b328de6f9cb56fc7e9bac88b75d38777c4",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -202,7 +236,7 @@
       },
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789382434,
+      "next_due": 1789382913,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -219,41 +253,7 @@
       "last_error": null
     },
     {
-      "address": "0x986ba348fea128695a69df7db6d0ff3db5ff2423",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789382434,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0x7539e859d950e7c2a01e3d15468eedadaf3ebfa5",
+      "address": "0xc57aa24860b56eae71e1e3e6d558d9c3f238d07c",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",

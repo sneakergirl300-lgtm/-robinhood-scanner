@@ -1,12 +1,12 @@
 {
   "collector_version": 7,
-  "last_block": 62959603,
-  "last_block_timestamp": 1789404324,
-  "scan_start": 62889058,
-  "scan_start_timestamp": 1789397134,
-  "scan_end": 62959603,
-  "scan_end_timestamp": 1789404324,
-  "scan_window_seconds": 7190,
+  "last_block": 62976683,
+  "last_block_timestamp": 1789406058,
+  "scan_start": 62906668,
+  "scan_start_timestamp": 1789398924,
+  "scan_end": 62976683,
+  "scan_end_timestamp": 1789406058,
+  "scan_window_seconds": 7134,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
@@ -14,8 +14,8 @@
   "requested_ranges": {
     "zero_mint": [
       {
-        "start": 62858908,
-        "end": 62959603
+        "start": 62906668,
+        "end": 62976683
       }
     ],
     "factory": [
@@ -245,7 +245,7 @@
       },
       {
         "start": 62888995,
-        "end": 62959603
+        "end": 62976683
       }
     ],
     "uniswap_v4_initialize": [
@@ -271,297 +271,205 @@
       },
       {
         "start": 62889058,
-        "end": 62959603
+        "end": 62976683
       }
     ]
   },
   "failed_ranges": {
     "zero_mint": [
       {
-        "start": 62908908,
-        "end": 62959603
+        "start": 62908168,
+        "end": 62912667
+      },
+      {
+        "start": 62913168,
+        "end": 62914167
+      },
+      {
+        "start": 62914668,
+        "end": 62915167
+      },
+      {
+        "start": 62916668,
+        "end": 62917167
+      },
+      {
+        "start": 62917668,
+        "end": 62918167
+      },
+      {
+        "start": 62918668,
+        "end": 62919667
+      },
+      {
+        "start": 62920168,
+        "end": 62920667
+      },
+      {
+        "start": 62921168,
+        "end": 62922167
+      },
+      {
+        "start": 62922668,
+        "end": 62923667
+      },
+      {
+        "start": 62924168,
+        "end": 62925167
+      },
+      {
+        "start": 62926668,
+        "end": 62927667
+      },
+      {
+        "start": 62931168,
+        "end": 62932167
+      },
+      {
+        "start": 62932668,
+        "end": 62933667
+      },
+      {
+        "start": 62934168,
+        "end": 62935167
+      },
+      {
+        "start": 62935668,
+        "end": 62936667
+      },
+      {
+        "start": 62937168,
+        "end": 62937667
+      },
+      {
+        "start": 62938168,
+        "end": 62938667
+      },
+      {
+        "start": 62940168,
+        "end": 62941667
+      },
+      {
+        "start": 62942168,
+        "end": 62943167
+      },
+      {
+        "start": 62944668,
+        "end": 62945667
+      },
+      {
+        "start": 62946168,
+        "end": 62946667
+      },
+      {
+        "start": 62947168,
+        "end": 62948167
+      },
+      {
+        "start": 62949668,
+        "end": 62950667
+      },
+      {
+        "start": 62952668,
+        "end": 62953167
+      },
+      {
+        "start": 62954168,
+        "end": 62955167
+      },
+      {
+        "start": 62955668,
+        "end": 62956667
+      },
+      {
+        "start": 62957168,
+        "end": 62958667
+      },
+      {
+        "start": 62959168,
+        "end": 62960667
+      },
+      {
+        "start": 62961168,
+        "end": 62961667
+      },
+      {
+        "start": 62962668,
+        "end": 62963667
+      },
+      {
+        "start": 62965168,
+        "end": 62966167
+      },
+      {
+        "start": 62967168,
+        "end": 62967667
+      },
+      {
+        "start": 62968668,
+        "end": 62969667
+      },
+      {
+        "start": 62970168,
+        "end": 62971167
+      },
+      {
+        "start": 62971668,
+        "end": 62972667
+      },
+      {
+        "start": 62974668,
+        "end": 62975667
+      },
+      {
+        "start": 62976168,
+        "end": 62976667
       }
     ],
     "factory": [
       {
-        "start": 62802025,
-        "end": 62802524
-      },
-      {
-        "start": 62803025,
-        "end": 62804024
-      },
-      {
-        "start": 62805025,
-        "end": 62806024
-      },
-      {
-        "start": 62806525,
-        "end": 62807524
-      },
-      {
-        "start": 62808525,
-        "end": 62809524
-      },
-      {
-        "start": 62811525,
-        "end": 62812024
-      },
-      {
-        "start": 62819995,
-        "end": 62820994
-      },
-      {
-        "start": 62821495,
-        "end": 62821994
-      },
-      {
-        "start": 62822495,
-        "end": 62823494
-      },
-      {
-        "start": 62824495,
-        "end": 62825494
-      },
-      {
-        "start": 62826495,
-        "end": 62827494
-      },
-      {
-        "start": 62827995,
-        "end": 62828994
-      },
-      {
-        "start": 62829495,
-        "end": 62830494
-      },
-      {
-        "start": 62830995,
-        "end": 62831494
-      },
-      {
-        "start": 62831995,
-        "end": 62832994
-      },
-      {
-        "start": 62833495,
-        "end": 62833994
-      },
-      {
-        "start": 62834495,
-        "end": 62834994
-      },
-      {
-        "start": 62835495,
+        "start": 62835995,
         "end": 62836494
       },
       {
-        "start": 62837495,
-        "end": 62837994
+        "start": 62920995,
+        "end": 62922494
       },
       {
-        "start": 62838495,
-        "end": 62839494
-      },
-      {
-        "start": 62840495,
-        "end": 62841494
-      },
-      {
-        "start": 62841995,
-        "end": 62842994
-      },
-      {
-        "start": 62844495,
-        "end": 62844994
-      },
-      {
-        "start": 62845495,
-        "end": 62845994
-      },
-      {
-        "start": 62846495,
-        "end": 62847494
-      },
-      {
-        "start": 62847995,
-        "end": 62848494
-      },
-      {
-        "start": 62848995,
-        "end": 62849494
-      },
-      {
-        "start": 62849995,
-        "end": 62850494
-      },
-      {
-        "start": 62851495,
-        "end": 62852494
-      },
-      {
-        "start": 62852995,
-        "end": 62853494
-      },
-      {
-        "start": 62853995,
-        "end": 62854494
-      },
-      {
-        "start": 62854995,
-        "end": 62855994
-      },
-      {
-        "start": 62856995,
-        "end": 62857494
-      },
-      {
-        "start": 62857995,
-        "end": 62858994
-      },
-      {
-        "start": 62859495,
-        "end": 62860494
-      },
-      {
-        "start": 62860995,
-        "end": 62861494
-      },
-      {
-        "start": 62862495,
-        "end": 62862994
-      },
-      {
-        "start": 62863495,
-        "end": 62864494
-      },
-      {
-        "start": 62864995,
-        "end": 62865994
-      },
-      {
-        "start": 62866495,
-        "end": 62866994
-      },
-      {
-        "start": 62867495,
-        "end": 62868494
-      },
-      {
-        "start": 62868995,
-        "end": 62869494
-      },
-      {
-        "start": 62869995,
-        "end": 62870494
-      },
-      {
-        "start": 62871495,
-        "end": 62871994
-      },
-      {
-        "start": 62872495,
-        "end": 62872994
-      },
-      {
-        "start": 62873495,
-        "end": 62873994
-      },
-      {
-        "start": 62874495,
-        "end": 62875494
-      },
-      {
-        "start": 62875995,
-        "end": 62876494
-      },
-      {
-        "start": 62877495,
-        "end": 62878494
-      },
-      {
-        "start": 62879495,
-        "end": 62880494
-      },
-      {
-        "start": 62881995,
-        "end": 62882494
-      },
-      {
-        "start": 62882995,
-        "end": 62883494
-      },
-      {
-        "start": 62883995,
-        "end": 62884494
-      },
-      {
-        "start": 62884995,
-        "end": 62885494
-      },
-      {
-        "start": 62885995,
-        "end": 62886994
-      },
-      {
-        "start": 62887495,
-        "end": 62888494
-      },
-      {
-        "start": 62888995,
-        "end": 62959603
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 62865408,
-        "end": 62866407
-      },
-      {
-        "start": 62869408,
-        "end": 62870407
-      },
-      {
-        "start": 62873908,
-        "end": 62874407
-      },
-      {
-        "start": 62875908,
-        "end": 62876407
-      },
-      {
-        "start": 62876908,
-        "end": 62877407
-      },
-      {
-        "start": 62889058,
-        "end": 62932057
+        "start": 62922995,
+        "end": 62923994
       }
     ]
   },
-  "zero_mint_logs": 160626,
-  "erc20_zero_mint_logs": 119020,
-  "factory_logs": 0,
-  "factory_corroborated_token_mints": 0,
-  "uniswap_v4_initialize_logs": 664,
-  "events_seen": 161290,
-  "unique_contracts_this_run": 3413,
-  "unique_candidates_this_run": 3413,
+  "zero_mint_logs": 109350,
+  "erc20_zero_mint_logs": 85410,
+  "factory_logs": 17320,
+  "factory_corroborated_token_mints": 4634,
+  "uniswap_v4_initialize_logs": 2029,
+  "events_seen": 128699,
+  "unique_contracts_this_run": 3202,
+  "unique_candidates_this_run": 3202,
   "candidate_source_counts": {
-    "uniswap_v4_initialize": 534,
-    "zero_address_mint": 2898
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 15,
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 22,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 1431,
+    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 2,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 996,
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 260,
+    "uniswap_v4_initialize": 1540,
+    "zero_address_mint": 2147
   },
   "classification_counts": {
-    "NEW_LAUNCH": 2898,
-    "NEW_MARKET": 515
+    "NEW_LAUNCH": 2147,
+    "NEW_MARKET": 1055
   },
-  "new_contracts_added": 644,
-  "new_candidates": 644,
-  "existing_contracts_updated": 256,
-  "stored_candidates": 21135,
-  "total_persisted_contracts": 21135,
+  "new_contracts_added": 1323,
+  "new_candidates": 1323,
+  "existing_contracts_updated": 788,
+  "stored_candidates": 22458,
+  "total_persisted_contracts": 22458,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 296.77,
-  "updated_at_unix": 1789404621,
+  "runtime_seconds": 174.56,
+  "updated_at_unix": 1789406234,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

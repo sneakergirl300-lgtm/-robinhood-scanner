@@ -75,6 +75,8 @@ class AnalyzerTests(unittest.TestCase):
         s=self.state();row=a.report_token(s['tokens'][TOKEN],s,NOW,{})
         self.assertEqual(row['status'],'UNRESOLVED');self.assertEqual(row['market_cap_status'],'MC UNRESOLVED')
         self.assertIsNone(row['actionable_alert']);self.assertIsNone(row['holders'])
+        self.assertEqual(row['discovered_at'],NOW)
+        self.assertEqual(row['discovery_sources'],[])
     def test_executed_price_uses_amounts(self):
         pool={'currency0':TOKEN,'currency1':a.USDG};swap={'amount0_raw':10*10**18,'amount1_raw':-20*10**6,'sqrt_price_x96':1}
         self.assertEqual(a.Decimal(a.executed_quote(pool,swap,TOKEN,18,6)),2)

@@ -40,6 +40,24 @@ No historical winner address is imported into production discovery or analyzer c
 
 The request ceiling bounds load, not capacity sufficiency. The observed collector added hundreds of contracts while this default admits eight per run. Queue depth, attempted count and outstanding gaps must guide tuning. Increasing the hot limit without RPC capacity would just spread unresolved work more thinly. The current 500-block sample can represent less than a minute on this chain; it is deliberately a labelled sample, not a full 15-minute flow measurement. Gap repair can fall behind indefinitely under this budget.
 
+## Implemented hybrid enrichment boundary
+
+`enricher.py` now consumes only the bounded `latest_analysis.json` hot set and writes
+`decision_candidates.json`. It does not call the Robinhood RPC and it cannot discover,
+drop, or reject a contract. Its first adapter performs keyless DexScreener searches by
+contract address in one chain-scoped batch, then accepts pair data only after an exact
+base-token address and `robinhood` chain match. It records third-party provenance, confidence, pair age, price,
+MC/FDV, liquidity, 5m/1h flow, buys/sells, profile links, prior-run deltas, and explicitly
+labels swap counts as neither buyers nor independent wallets.
+
+Every Part 2 row produces a `NEEDS_MODEL_REVIEW` packet even when DexScreener is absent,
+rate-limited, or malformed. Structural `REJECT` blocks positive promotion. Structural
+`UNRESOLVED` remains observation-only and is never described as clean. Fomo, independent
+social attention, holder growth, concentration, creator linkage, liquidity control,
+sellability/tax, and public scam trackers remain explicit unresolved/not-implemented
+fields rather than being inferred from silence. The workflow persists the packets and
+their compact prior snapshot so consecutive observations can be compared.
+
 ## Proposed next implementation: strength before expensive enrichment
 
 1. Add a launchpad-specific adapter for the most productive *verified* launch mechanism. Resolve lifecycle and creator from authenticated event layouts and contract code, including internal factory deployments. Generic receipt.from is not proof of the token creator.

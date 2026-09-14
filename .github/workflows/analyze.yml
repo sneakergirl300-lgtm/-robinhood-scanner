@@ -18,7 +18,7 @@ jobs:
   analyze:
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,12 +26,16 @@ jobs:
       - name: Bounded incremental observations
         timeout-minutes: 4
         run: python -u analyzer.py
-      - name: Save analysis independently of discovery
+      - name: Keyless exact-contract enrichment
+        if: always()
+        timeout-minutes: 2
+        run: python -u enricher.py
+      - name: Save analysis and decision packets independently of discovery
         if: always()
         run: |
           git config user.name "Robinhood Scanner"
           git config user.email "scanner@users.noreply.github.com"
-          for file in analysis_state.json latest_analysis.json analysis_state_legacy.json; do
+          for file in analysis_state.json latest_analysis.json analysis_state_legacy.json decision_candidates.json; do
             if test -f "$file"; then git add "$file"; fi
           done
           git diff --cached --quiet || git commit -m "Update bounded Robinhood analysis"
@@ -45,4 +49,5 @@ jobs:
           path: |
             analysis_state.json
             latest_analysis.json
+            decision_candidates.json
           if-no-files-found: warn

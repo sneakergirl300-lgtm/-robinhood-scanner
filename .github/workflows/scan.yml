@@ -3,10 +3,14 @@ name: Robinhood Contract Collector
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
 
 permissions:
   contents: write
+
+concurrency:
+  group: robinhood-contract-collector
+  cancel-in-progress: false
 
 jobs:
   scan:

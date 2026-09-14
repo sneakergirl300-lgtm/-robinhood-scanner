@@ -1,299 +1,5 @@
 [
   {
-    "address": "0xa9709519ed8ccc39013ad2379d5a9e02a6a27cd2",
-    "first_seen_block": 62209144,
-    "tx": "0x5ea16eb60e3bc9674f01466c55b50c09ca38562eeb5852b7896a0770e2ac96a3",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x5e26c46acb1ca5fdf1b21e09183a72361df6b0f7",
-    "first_seen_block": 62209172,
-    "tx": "0x7bfe1a2cfd712ca8def8874b706773aa98531837fa43e74c7973e224fae41106",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x7341f5e734816b7eb855082c89ba4341f4fc7039",
-    "first_seen_block": 62209198,
-    "tx": "0x7eb12e5a10ebc5e19a91fa112d28efacd9f78b3759fc7fa9e8dfe38354d53070",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x721f9acda86d6d4317f202cec11343c09397efe6",
-    "first_seen_block": 62209227,
-    "tx": "0x55a015f395b7b2ecb3cfe5ccb1f9522e7ffcc73ef77853beb203259b864f3eca",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xc2f056de3345c7942b8ad96d59771fc45e77ef37",
-    "first_seen_block": 62209230,
-    "tx": "0xd35f45e3da0c68e2d18bdb469b9ad06c8901a5e32af5db0fe5afdbb266e2f6c4",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xf82baa01da3f80c547f5826d47bcbb521a6848a5",
-    "first_seen_block": 62209242,
-    "tx": "0x080571423ed1a7a0bea4b5ed6ef680fe3f710cd49ab9dc15ea1d867111c13391",
-    "source": "uniswap_v4_initialize",
-    "collected_at_unix": 1789328516
-  },
-  {
-    "address": "0xa6d4ed3d66257d9118b7c4ec770b6eb9501bf182",
-    "first_seen_block": 62209248,
-    "tx": "0xa0fc11fa5163de771abad8a9a1d45877895220edab554368a0acf4a088f4bb75",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xff79ca17e4d3d20d3617926896f80634cb2d613d",
-    "first_seen_block": 62209260,
-    "tx": "0xc31c57325947756f5b254442fdf068dc182ed109f8914ef735493efe5d960167",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x0d22fa70a07b2d3e44a3dc06047e8ff395ac6147",
-    "first_seen_block": 62209273,
-    "tx": "0x053107ca4e6cb8739b27483704ab99dd426c48fe95f2adc97c3e8ed728f4054f",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x0ee9ae73699707ccd75c25130eacf109574f1e18",
-    "first_seen_block": 62209290,
-    "tx": "0xe409a3f26a9b7466c13dd8d2f87d94271e1ff65d749d82bebbd9d4533bb19d67",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xe9412dee8f2a734e2e82f6d1b5cb4c3b2d8e1079",
-    "first_seen_block": 62209299,
-    "tx": "0xa1ee9b7b4f50f0ee7d9259f927469ceffbf8627ba98041d4e88a3027d04ebae9",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x3589ecffaef6facf4827c6ab43c6df7b7d583eeb",
-    "first_seen_block": 62209305,
-    "tx": "0xa770dbf23b2b4d39e4be9942edf7f9184897823f68f4341bc19190115115a45c",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x4c00f07c312c55ba93c294ce03dfbd15f42e1a61",
-    "first_seen_block": 62209312,
-    "tx": "0x452d0e6dbdf286a717d30e36236957a5164f334661b28b32fa8bcf03492be6bd",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x3bbaff2777d684500699da9daacec38599f6f22a",
-    "first_seen_block": 62209318,
-    "tx": "0x50ece7887f29c1f64a159977587dbda76a6648de33e37a471278680816661eb1",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xd0dfa548c43fe38a66a6d41e98c3a6680e33cee7",
-    "first_seen_block": 62209356,
-    "tx": "0xc4e98e86ee3b6eee8a95d258eb90c94e3eb0a4404688a92edb61e679b42511bd",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x5efa31781a1597770f66787a8dfc84e889763f5a",
-    "first_seen_block": 62209367,
-    "tx": "0xf58e227f5df5b7e42c5c4af64005de78f02774e92632f2d1c57e5094ab03fad7",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xe4b70978df3d78c73f3468e18f79da25bb151e18",
-    "first_seen_block": 62209370,
-    "tx": "0x0386d194ed9378457b5412e674eb98baf6e137d87f1d0c2594d167de7c8994be",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x588a1a80b09c29f3903c181beb2887aa9dbbd4a0",
-    "first_seen_block": 62209379,
-    "tx": "0xe6996f07d210c44b26b0eaec9dcf0c87db447aafa930d4555b9e112d70a3cda8",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x8d1612b4b78ebf08cfbf01a04fa270ccbb0509a2",
-    "first_seen_block": 62209421,
-    "tx": "0x9889ddc36db97236a86cddddb5ad7315d9dcf67b281231cc0d025b6a67657710",
-    "source": "uniswap_v4_initialize",
-    "collected_at_unix": 1789328516
-  },
-  {
-    "address": "0xc37ddb4688f04ef29f882b9fa363b9248cef9274",
-    "first_seen_block": 62209421,
-    "tx": "0x9889ddc36db97236a86cddddb5ad7315d9dcf67b281231cc0d025b6a67657710",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x44d4a0a212a62638216699b31c6d68d11daaa8c9",
-    "first_seen_block": 62209433,
-    "tx": "0x930c322370fa89d5984c9defc4131902faeae7766c1e92f8de6745de4d65b780",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x19792710f6b45def198cadb55dfbcb977f921e6a",
-    "first_seen_block": 62209484,
-    "tx": "0x9cd44ec25d1d15f01363ed65c4dda5a765dc10e80aa41b055b6628939aa5c85a",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xf039b27b6153cab6b0862ee1a281df81033adf19",
-    "first_seen_block": 62209514,
-    "tx": "0x1435d0b1f3654a04be637399a37e2fc0a0009c6ef70a4ae1072bd0129df76881",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x36d90e22a1f9033bad9270435b27977984e83c6d",
-    "first_seen_block": 62209533,
-    "tx": "0xe4eab9ebb203884e42e2ad6a18b639af3bc51a77a60fdb56815eff21f3e278ec",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x1f032f470fe08b4b6d6a06d5e72ac2d75cd5376d",
-    "first_seen_block": 62209538,
-    "tx": "0x0670406f4d5874a2bb146bba4821ab3eb1d6796b79b44cb963005d6afc732b50",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xb9dcc7dfb08316fe59ca04ab8298476e3f381e18",
-    "first_seen_block": 62209565,
-    "tx": "0xf786a2549466ea67138f46a1645f977e2ee613939d32c84778e0e31d860695db",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x701fd7419d5d742cc66724fb8152ffd9e38c665f",
-    "first_seen_block": 62209580,
-    "tx": "0x662728cdbc9f31e6dba6c7d7e6533a2574f176cd5423882ef1fceb6bd3f82026",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x56045f1e20a877eba25cd2efe85f884b6e44b64d",
-    "first_seen_block": 62209618,
-    "tx": "0x9de190ae85267054b618a30308a45e1c29a9781c55baf45086988cd06c0f56a1",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x3ec33b1793a588542833f41e777606f2ceed21d0",
-    "first_seen_block": 62209648,
-    "tx": "0xcb682f303a993152ba2a36ea1d4e4e7519340c7741ea6cd1dcdbf20f9c965e2e",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xc3b0fab01b452d91f33a7d215a3cfb69f3f57a04",
-    "first_seen_block": 62209651,
-    "tx": "0xac622086f1f9ea03bfcfd2411f72fcc438fa50cc409aef625cc657626f3e2f0e",
-    "source": "uniswap_v4_initialize",
-    "collected_at_unix": 1789328516
-  },
-  {
-    "address": "0x514e86e00db27339a5cf9572965088d93ee011de",
-    "first_seen_block": 62209720,
-    "tx": "0xbf20e20be9841a53593bd1ebab77308730026281ac8f3069836240d7a14c0b72",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xf81b4d9dfc8f7859043ccba49af4a2f354f291e4",
-    "first_seen_block": 62209735,
-    "tx": "0xab65fd74adf6810c44de63ce703ea29dbbfdcd6d717207094a283acec4bada44",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x5699eded518af269e4e4d6437a98d13811f7a601",
-    "first_seen_block": 62209767,
-    "tx": "0x15290d2b517588911350d9b3d49c4a4b93fcc189fc7b9fa7979c5979ab40056a",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x99a98af2d85f11749b33e4cd9b5e61090713b6b1",
-    "first_seen_block": 62209772,
-    "tx": "0xd650c84628498f6c0521bdc31825f79e2387bb6f04885175af1449ce094b73bc",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xb7f74b19fef37a189faaef574a1a30e15476610d",
-    "first_seen_block": 62209793,
-    "tx": "0x33c02e297e8ab942445eff592ccf3966a8ee902d451b2e209b67f111eb4efed4",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xff74d63cb07086d4eac915dd5c82c9fad4350328",
-    "first_seen_block": 62209793,
-    "tx": "0x0d2e1614e1bda39e883369e22b2d41a6b6ad0650d498f531805b8cb1f916b19a",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xea7f29099a55327f208732d63dbc21d62a3a1e18",
-    "first_seen_block": 62209825,
-    "tx": "0xcca0b34ad0a870350c0a8d4f0314b4e237fb23545357d189087dc004272eea4f",
-    "source": "uniswap_v4_initialize",
-    "collected_at_unix": 1789328516
-  },
-  {
-    "address": "0x9427cef3ed0ad5eefa03452bfece7bd2d6e60aed",
-    "first_seen_block": 62209862,
-    "tx": "0xa76f9b8efe02dfae2a32d839fdd3ba3e5f7635b7a92f5126456941e93bad6b1a",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0xf9f89dee85bd4205b3d3309928899125ea0adf03",
-    "first_seen_block": 62209902,
-    "tx": "0x882069d567268c68ab901ded63b7fa4f8ce00f6ac0626da6b96f12b85dff4974",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x1054fd596e78a62e33c9f00c2f3d0f5991461e18",
-    "first_seen_block": 62209918,
-    "tx": "0xb75a3e96d1e9db697f6dd7bb0f524d7e47a5ca96a4a7134846274be6267e8164",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x4891c1dce95d8546093c0f8ab985b3071f8d7ad2",
-    "first_seen_block": 62209935,
-    "tx": "0x6fa082ba82a019faa53174aeb5c2cd7499da29e3bdc348e384457a59102f78d3",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
-    "address": "0x478eff678fa9be59db09c12ddb3f9fb22cb21e18",
-    "first_seen_block": 62209940,
-    "tx": "0x8f8d354041426751c49ab508fab59a0c45759efb8d7adfc5310b8f25b8d33e5d",
-    "source": "zero_address_mint",
-    "collected_at_unix": 1789328488
-  },
-  {
     "address": "0x106672cca4088155748faa41158cca1165eb940c",
     "first_seen_block": 62209965,
     "tx": "0xf16fe80a9194d390e168a91cbcaf098434dbaf336bba9be8f637dd3c2c89b990",
@@ -69998,5 +69704,299 @@
     "tx": "0xbdebd749c59eadded0df2740ec70c3a5d429933c2c54ae99895022c31f07e167",
     "source": "zero_address_mint",
     "collected_at_unix": 1789364734
+  },
+  {
+    "address": "0x78dda30f89d6be83ceaa59da3cb6a4db88e9a7dd",
+    "first_seen_block": 62569632,
+    "tx": "0x29586258264f77e556021a9b156710006d408cd295e83017917f6c1789909cb5",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xf6acdf2a5d7754fd25530480116e0a9d8d3d01a8",
+    "first_seen_block": 62569776,
+    "tx": "0xcf1bc21391842bffbb7696f0444c2fe15fea24cac3bfacbf1a2d1ec100e2f69a",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xe5bf0c3f7a6697a28f5ff798f510f538fa031e18",
+    "first_seen_block": 62569833,
+    "tx": "0x2606606d1668e2fdd5d836923597f443c746668b60a4948f064d20d4a152d27e",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xac4421bcfe3b52f2b30fbd422a84d0e03e5dd615",
+    "first_seen_block": 62569926,
+    "tx": "0x60e0556d3950df3028476d1c238bf099fe6fa96f3cbc0eba2c395b1b6532c233",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xf319f8954fe8e0559fb6adb628cb6ef02591939d",
+    "first_seen_block": 62569926,
+    "tx": "0x60e0556d3950df3028476d1c238bf099fe6fa96f3cbc0eba2c395b1b6532c233",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x79fe86b963255ce884bdcac6388c50a599ba277f",
+    "first_seen_block": 62569999,
+    "tx": "0x24de6885e2fdb03222bd7f2608e293efc309651c4de9784ef973c4285a356b2f",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xae35e6336fed8dcd4766077fddf82ee65040c48b",
+    "first_seen_block": 62570271,
+    "tx": "0x778b33f776f9aaa818d0969612c1d06f040c97641c39c192a118dbf09a223e42",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x7cfd533c86021ba3f3acc34287211ab18b1fd09e",
+    "first_seen_block": 62570302,
+    "tx": "0x3148ab1cd07fe507d29f2410d36851476daa87d3a6d67bd2e1253ba4968cfcdf",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x3d3c53682d5ed30bf8ea97cfd963616d904dc270",
+    "first_seen_block": 62570512,
+    "tx": "0x120e8da5a8083cb2250cdac3ac8abed4d025dd8980fb62c0cfcd66757de34c29",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x299fa036f931fb5930047bff0f10b15c25f7a8f3",
+    "first_seen_block": 62570572,
+    "tx": "0x11ec8f13aeeb9c94d580b96a69aeda7afaf4aa4ad8bd2f20bdb906f92c7f79f4",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x05364f40e12a226d030ffe4999db72f536730985",
+    "first_seen_block": 62570602,
+    "tx": "0xb1dd2ca2f459ded093e8c6f7f01e655015a5c833164a93b8130eebe2fa5afcd9",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xce1a19412b8d58af962fa03e22c3f89e94a701a8",
+    "first_seen_block": 62570993,
+    "tx": "0xb7e74cd952e6d56c9c19fa305c5a4697e43da15725ebfc907f61b3ca6b4cd5de",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xc11b51060dc962bcf47c15472a278ea5e9f73da4",
+    "first_seen_block": 62571008,
+    "tx": "0x1fe20b169f2e8745ac13e25df56f8d34de819733badee12f90b418135c95bdd5",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xdee44e0e9e0ac41b5af3596c9226910244691e18",
+    "first_seen_block": 62571019,
+    "tx": "0x8a4f96be50859bf4edfbc96511281a65ed1da3143fa2616b1715561f59c039cb",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x81d3b1346d68593171c036bb606a84462361cdc5",
+    "first_seen_block": 62571051,
+    "tx": "0x2dc08366256cab0eaf100bc2cd0823207d0c522a7c0e4892a48a266d3329ced9",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x339f9683e36871ba02968dd11b8ee618c8371e18",
+    "first_seen_block": 62571409,
+    "tx": "0xf648422cdba6868400014f51cf7151c70503c4c3d9dd1f0d3b4e3699729898fa",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xee7206c63bd5d1074e3928350c24ba6dba8cc96b",
+    "first_seen_block": 62571458,
+    "tx": "0x7c4dea2de0687635d23bc7b9ac3acbdad42e57ce3d17bf23196800b8a8969994",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xca7fe9f50cfb607aa4038a1592b6b070af5e382c",
+    "first_seen_block": 62571553,
+    "tx": "0x29d0928cfd5ae359dbe54cd1b9e206f97c9c3a576b489b4a0fa42e3732eef15a",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xaaf399b51c94033ff874505ec066ac152ffe5ef2",
+    "first_seen_block": 62571577,
+    "tx": "0xeb86eb83fdae19898a928bd720416bbaf5102d1d2426c7dd00de40f0291484fd",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x8b640b6af1cf00703502ecff11d7d139654486fa",
+    "first_seen_block": 62572069,
+    "tx": "0x6a83ea31c229fa04c8151c95f5c1f95e136d05ab0392b3e00433e49ea455a8d8",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x46c6db8771bf5d63d8e83334936c31520f781e18",
+    "first_seen_block": 62572214,
+    "tx": "0x40cac2ddd46643f95bf8912786c51228ca88f3159b725e5a7838c38a447c01a4",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x1a2a01a0849c891f84ffe99a9d1e325ab59f3b0b",
+    "first_seen_block": 62572591,
+    "tx": "0xb3a52bf229dae3662b5c22ea4894e1720ee560802aa1228080db1288f0d0a95a",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x34d406c517db6b440e2e001560580c0e245cff32",
+    "first_seen_block": 62572697,
+    "tx": "0x4d2e7f1ca010635490f9f9823bcb42f6176129539feddbc2bc3f4bd00065203f",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xa014242111c6cb6abfd4c3b6cfdd7d7ee59c1728",
+    "first_seen_block": 62572788,
+    "tx": "0x4fa781c607b87bd312cef6bdeff558aa3cca8228ef99e6322a5006d95c0f5048",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x3c9de6f00517ee9fac13c017526ebfd49c5ad09e",
+    "first_seen_block": 62572844,
+    "tx": "0xfcba2832a4cc128692a34146d73fba44cce55420c0d19a7ae85a45e5bd1bc110",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0xc398354bff9fb6970a7d1d95f12025986b0dbdae",
+    "first_seen_block": 62573144,
+    "tx": "0xb0be4776c74b84a575ba0f33b93f854628a3c7852f754e4faee13dd9da0ac0ee",
+    "source": "zero_address_mint",
+    "collected_at_unix": 1789365304
+  },
+  {
+    "address": "0xa9ea568c0a9d4a76e0053384918474fa186dce14",
+    "first_seen_block": 62573167,
+    "tx": "0x726e36398c768c7fa30567d8641851f4c53185acc3b4283ebd49527735bf0308",
+    "source": "zero_address_mint",
+    "collected_at_unix": 1789365304
+  },
+  {
+    "address": "0xffaa68a9b8bda1fbee7df1fd80e90afb202c7723",
+    "first_seen_block": 62573181,
+    "tx": "0xa60c025279e35cfebb3116e7406ade4234b142515fa4d9b182b1fc63980ae86e",
+    "source": "zero_address_mint",
+    "collected_at_unix": 1789365304
+  },
+  {
+    "address": "0x98daf5b21a8df9e5a5835ad0687ebac4c5319ef6",
+    "first_seen_block": 62573225,
+    "tx": "0x4043ed54d12b038de07892922f176c80760af2cac0ce00be1e354063094b7510",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x2482d6d879e21d4ed3f9189341b75ef73614e568",
+    "first_seen_block": 62573375,
+    "tx": "0x1dce3406fbb88119dcc43ad3e236732fe1e69437575ffe536627a7071af028e1",
+    "source": "zero_address_mint",
+    "collected_at_unix": 1789365304
+  },
+  {
+    "address": "0x4208976c9b81a737cbaca2325ce9117ba273bcf5",
+    "first_seen_block": 62573428,
+    "tx": "0x494dec3a960dced404740713624fb790d1c1a10ca9669da5296a885c8a5f17f0",
+    "source": "zero_address_mint",
+    "collected_at_unix": 1789365304
+  },
+  {
+    "address": "0xca63f97c9c287622ac54f220bbe230d90c24f459",
+    "first_seen_block": 62573684,
+    "tx": "0x782258ab5bc8a40d940f9df932d439117624f86b7ae7eeaf2477aa62b78afd93",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x19e7d7488d7b11516719e0527ce3a731ad62fa23",
+    "first_seen_block": 62573694,
+    "tx": "0xd0f1093da23e8080a1b5a628354b6dabf126ea271644ac815889380604d4bc2f",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x72417f0f202aaf80199179e10e280ded5715807e",
+    "first_seen_block": 62573694,
+    "tx": "0xd0f1093da23e8080a1b5a628354b6dabf126ea271644ac815889380604d4bc2f",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x16a3d0e117824850452f92ab35c5e94927160087",
+    "first_seen_block": 62574042,
+    "tx": "0xb0613677b777a45caa86ec29c8302e609ac064b650fe1dac1f5ddb1f6e793d6a",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x113453cc049966464db19b4a75dad53715af8674",
+    "first_seen_block": 62574068,
+    "tx": "0xf43c3a6851ac5e943ea03a196b4ea77a75b6727d6ed3d10da9e3e1f41adf4087",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x622e47f55ff3361e1128e8bd45cc5dda59441e18",
+    "first_seen_block": 62574184,
+    "tx": "0x028a6ad43646a092357b35574f4e72eafaa3a01edf54243eeb15468f9c1b1ba7",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+    "first_seen_block": 62574201,
+    "tx": "0x2077857224067afcf4d29d23b6b4c38b5edbced643c050ddbf0af42880009d08",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x639e127b392cfbb9d9dc4ea31e46524cccd51e18",
+    "first_seen_block": 62574201,
+    "tx": "0x2077857224067afcf4d29d23b6b4c38b5edbced643c050ddbf0af42880009d08",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x44ebf141d8c95df2ad88ba9d76792826a0a27e82",
+    "first_seen_block": 62574232,
+    "tx": "0xc585828f0623aaaa0c7fe6ccb954952b350af7eacce5db5334899bd36ab1c57d",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x255f14df58ebc14f87431caf59b87800d75b0afd",
+    "first_seen_block": 62574428,
+    "tx": "0x291ca10d70869d202f21745c302b289f2e96c46ee83ec1138cdcd8ae434fc5d3",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
+  },
+  {
+    "address": "0x4d6a8b46b286e62934162afac01d12531025a7e9",
+    "first_seen_block": 62575258,
+    "tx": "0xfc2764f35bd92c10edf5bd8c09d152feaa87de960b6781148d871d100322c504",
+    "source": "uniswap_v4_initialize",
+    "collected_at_unix": 1789365311
   }
 ]

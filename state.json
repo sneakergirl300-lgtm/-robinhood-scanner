@@ -1,45 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 62907958,
-  "last_block_timestamp": 1789399057,
-  "scan_start": 62837288,
-  "scan_start_timestamp": 1789391860,
-  "scan_end": 62907958,
-  "scan_end_timestamp": 1789399057,
-  "scan_window_seconds": 7197,
+  "last_block": 62924464,
+  "last_block_timestamp": 1789400740,
+  "scan_start": 62854908,
+  "scan_start_timestamp": 1789393657,
+  "scan_end": 62924464,
+  "scan_end_timestamp": 1789400740,
+  "scan_window_seconds": 7083,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 62819495,
-        "end": 62821994
-      },
-      {
-        "start": 62837288,
-        "end": 62907958
-      }
-    ],
-    "factory": [
-      {
-        "start": 62801025,
-        "end": 62813024
-      },
-      {
-        "start": 62819495,
-        "end": 62907958
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 62837288,
-        "end": 62907958
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 62820995,
@@ -50,12 +22,8 @@
         "end": 62839287
       },
       {
-        "start": 62892788,
-        "end": 62893287
-      },
-      {
-        "start": 62893788,
-        "end": 62907958
+        "start": 62854908,
+        "end": 62924464
       }
     ],
     "factory": [
@@ -65,47 +33,73 @@
       },
       {
         "start": 62819495,
-        "end": 62880494
-      },
+        "end": 62924464
+      }
+    ],
+    "uniswap_v4_initialize": [
       {
-        "start": 62886995,
-        "end": 62887494
-      },
-      {
-        "start": 62898495,
-        "end": 62898994
+        "start": 62854908,
+        "end": 62924464
       }
     ]
   },
-  "zero_mint_logs": 162987,
-  "erc20_zero_mint_logs": 119900,
-  "factory_logs": 5357,
-  "factory_corroborated_token_mints": 4365,
-  "uniswap_v4_initialize_logs": 1377,
-  "events_seen": 169721,
-  "unique_contracts_this_run": 3312,
-  "unique_candidates_this_run": 3312,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 62837788,
+        "end": 62838287
+      },
+      {
+        "start": 62856408,
+        "end": 62856907
+      },
+      {
+        "start": 62857908,
+        "end": 62858407
+      },
+      {
+        "start": 62858908,
+        "end": 62924464
+      }
+    ],
+    "factory": [
+      {
+        "start": 62801025,
+        "end": 62813024
+      },
+      {
+        "start": 62819495,
+        "end": 62924464
+      }
+    ],
+    "uniswap_v4_initialize": [
+      {
+        "start": 62854908,
+        "end": 62924464
+      }
+    ]
+  },
+  "zero_mint_logs": 12607,
+  "erc20_zero_mint_logs": 10456,
+  "factory_logs": 0,
+  "factory_corroborated_token_mints": 0,
+  "uniswap_v4_initialize_logs": 0,
+  "events_seen": 12607,
+  "unique_contracts_this_run": 276,
+  "unique_candidates_this_run": 276,
   "candidate_source_counts": {
-    "factory_mint:0x00004c4ccc709ef590f7c81102c0689f0263d4e9": 1,
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 5,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 48,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 507,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 381,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 74,
-    "uniswap_v4_initialize": 1069,
-    "zero_address_mint": 2872
+    "zero_address_mint": 276
   },
   "classification_counts": {
-    "NEW_LAUNCH": 2872,
-    "NEW_MARKET": 440
+    "NEW_LAUNCH": 276
   },
-  "new_contracts_added": 1446,
-  "new_candidates": 1446,
-  "existing_contracts_updated": 467,
+  "new_contracts_added": 0,
+  "new_candidates": 0,
+  "existing_contracts_updated": 0,
   "stored_candidates": 18862,
   "total_persisted_contracts": 18862,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 225.5,
-  "updated_at_unix": 1789399283,
+  "runtime_seconds": 233.51,
+  "updated_at_unix": 1789400977,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

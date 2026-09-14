@@ -1,0 +1,48 @@
+name: Robinhood Incremental Analyzer
+
+on:
+  workflow_run:
+    workflows: [Robinhood Contract Collector]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: robinhood-part2
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Bounded incremental observations
+        timeout-minutes: 4
+        run: python -u analyzer.py
+      - name: Save analysis independently of discovery
+        if: always()
+        run: |
+          git config user.name "Robinhood Scanner"
+          git config user.email "scanner@users.noreply.github.com"
+          for file in analysis_state.json latest_analysis.json analysis_state_legacy.json; do
+            if test -f "$file"; then git add "$file"; fi
+          done
+          git diff --cached --quiet || git commit -m "Update bounded Robinhood analysis"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Preserve checkpoint even if commit fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-checkpoint-${{ github.run_id }}
+          path: |
+            analysis_state.json
+            latest_analysis.json
+          if-no-files-found: warn

@@ -1,0 +1,12 @@
+{
+  "purpose": "Evaluation identities only. Not imported by discovery or analysis. No historical launch-time data has been supplied.",
+  "runners": {
+    "JACOB": "0x3df3644bcf4ce0d993e18c86c3080e53bfea06f1",
+    "Maple": "0x10b409f69989bc34e36a5105874f6d64e3eb0bff",
+    "EXAMCN": "0x84baff039dfb04bc18801a9a6cc1558f7d84c630",
+    "SIH": "0x4d1a96b7f567b0672a407683fa6e8ecc448402dc",
+    "Fortune500": "0xbee455b5cd3a84b03871c779b018e7959be15bab"
+  },
+  "scam_regression": {"SYNTH": "0x4534dda9ee44a9869f57aab2a85a175a940911f8"},
+  "historical_replay_status": "UNRESOLVED_MISSING_TIME_ORDERED_EVIDENCE"
+}

@@ -1,21 +1,21 @@
 {
   "version": 3,
-  "generated_at": 1789420742,
+  "generated_at": 1789422290,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.369,
+  "runtime_seconds": 0.336,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789420721,
-  "collector_age_seconds": 21,
-  "universe_count": 32320,
+  "collector_updated_at": 1789422270,
+  "collector_age_seconds": 20,
+  "universe_count": 33432,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 15368,
+  "due_remaining": 15033,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
     {
-      "address": "0x4d21483a44bf67a86b77e3da301411880797d452",
+      "address": "0x5ddc7b08b1ebad8c6bb4f22c2142ce51f68370aa",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -32,15 +32,14 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789402577,
-      "first_seen_block": 62923143,
-      "last_seen_block": 63119833,
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134959,
+      "last_seen_block": 63134959,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789402595,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -57,7 +56,7 @@
       "last_error": null
     },
     {
-      "address": "0x827a4f2d18fe0bcae31788cdb86c82aa99981e18",
+      "address": "0x1a3f1a5bb50aa4817b915fbf5c4808e88d9d54ff",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -72,16 +71,16 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_MARKET",
+      "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize"
+        "zero_address_mint"
       ],
-      "discovered_at": 1789420720,
-      "first_seen_block": 63119833,
-      "last_seen_block": 63119833,
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134947,
+      "last_seen_block": 63134947,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789420742,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -98,7 +97,7 @@
       "last_error": null
     },
     {
-      "address": "0xe2324ff2a59f8ecba8c321c6466e59121c00e795",
+      "address": "0x8825edff851f6fc8f0d91d3942c946910d38771b",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -113,16 +112,16 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_MARKET",
+      "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize"
+        "zero_address_mint"
       ],
-      "discovered_at": 1789352295,
-      "first_seen_block": 62443122,
-      "last_seen_block": 63119778,
+      "discovered_at": 1789359910,
+      "first_seen_block": 62505089,
+      "last_seen_block": 63134924,
       "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789417574,
+      "next_due": 1789406251,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -139,7 +138,7 @@
       "last_error": null
     },
     {
-      "address": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+      "address": "0xc91b2ea65b32f2bc25b35d5c549aab40708c0aa0",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -156,15 +155,14 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789332452,
-      "first_seen_block": 62251561,
-      "last_seen_block": 63119735,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134914,
+      "last_seen_block": 63134914,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789420742,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -181,7 +179,7 @@
       "last_error": null
     },
     {
-      "address": "0xa3fb30570e5fd364e94cb6dc0890af86e9318ab5",
+      "address": "0x32395df8e34fe76e76fc5ab7b02dca10cf0be0b2",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -198,15 +196,14 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789380405,
-      "first_seen_block": 62691318,
-      "last_seen_block": 63119735,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134897,
+      "last_seen_block": 63134897,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789420742,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -223,7 +220,7 @@
       "last_error": null
     },
     {
-      "address": "0x28c5cf814cffca7a96a111c2e699b8ca8e78b304",
+      "address": "0x25bf3e2778e96ee9708a521a56f56de6017bd09e",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -240,15 +237,14 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789419514,
-      "first_seen_block": 63107449,
-      "last_seen_block": 63119717,
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134890,
+      "last_seen_block": 63134890,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789419670,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -265,7 +261,7 @@
       "last_error": null
     },
     {
-      "address": "0x97d601c6572fce46f9638ff260508f1dbe799ef4",
+      "address": "0xb5ff784bed7b49fa3e70ddd1de1ec9f006b3c864",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -280,16 +276,16 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_MARKET",
+      "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize"
+        "zero_address_mint"
       ],
-      "discovered_at": 1789420720,
-      "first_seen_block": 63119664,
-      "last_seen_block": 63119664,
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134889,
+      "last_seen_block": 63134889,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789420742,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -306,7 +302,7 @@
       "last_error": null
     },
     {
-      "address": "0x4d4ce4c4fbc612de2bd944af77875e6329111e18",
+      "address": "0xb7d4f6e060a2f63db35dea1867bf0324c8c22b76",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -321,16 +317,16 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_MARKET",
+      "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize"
+        "zero_address_mint"
       ],
-      "discovered_at": 1789420720,
-      "first_seen_block": 63119632,
-      "last_seen_block": 63119632,
+      "discovered_at": 1789422220,
+      "first_seen_block": 63134885,
+      "last_seen_block": 63134885,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789420742,
+      "next_due": 1789422290,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],

@@ -23,10 +23,13 @@ jobs:
       - name: Run collector
         run: python collector.py
 
+      - name: Run Part 2 analyzer
+        run: python analyzer.py
+
       - name: Save results
         run: |
           git config user.name "Robinhood Scanner"
           git config user.email "scanner@users.noreply.github.com"
-          git add candidates.json state.json
-          git diff --cached --quiet || git commit -m "Update Robinhood candidates"
+          git add candidates.json state.json analysis_state.json latest_analysis.json
+          git diff --cached --quiet || git commit -m "Update Robinhood candidates and analysis"
           git push

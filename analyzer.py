@@ -28,6 +28,8 @@ import json
 import math
 import time
 import urllib.request
+import urllib.error
+import random
 from pathlib import Path
 
 RPC = "https://rpc.mainnet.chain.robinhood.com"
@@ -63,10 +65,15 @@ SEL_OWNER = "0x8da5cb5b"
 SEL_BALANCE_OF = "0x70a08231"
 
 # Keep Part 2 bounded. Part 1 remains the broad, persistent universe.
-HOT_LIMIT = 220
-FIRST_RUN_LOOKBACK_SECONDS = 3 * 60 * 60
+HOT_LIMIT = 80
+FIRST_RUN_LOOKBACK_SECONDS = 90 * 60
 RECURRING_OVERLAP_SECONDS = 20 * 60
 MAX_BLOCKS_PER_QUERY = 500
+
+RPC_MAX_RETRIES = 5
+RPC_BASE_BACKOFF_SECONDS = 1.0
+RPC_MIN_INTERVAL_SECONDS = 0.10
+_last_rpc_at = 0.0
 MAX_SNAPSHOTS_PER_TOKEN = 20
 PRICE_MAX_AGE_SECONDS = 30 * 60
 
@@ -79,6 +86,8 @@ def load_json(path, default):
 
 
 def rpc(method, params, timeout=20):
+    global _last_rpc_at
+
     body = json.dumps({
         "jsonrpc": "2.0",
         "id": 1,
@@ -91,17 +100,53 @@ def rpc(method, params, timeout=20):
         data=body,
         headers={
             "Content-Type": "application/json",
-            "User-Agent": "robinhood-scanner-analyzer/1.0",
+            "User-Agent": "robinhood-scanner-analyzer/1.1",
         },
     )
 
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        obj = json.load(response)
+    for attempt in range(RPC_MAX_RETRIES):
+        since_last = time.time() - _last_rpc_at
+        if since_last < RPC_MIN_INTERVAL_SECONDS:
+            time.sleep(RPC_MIN_INTERVAL_SECONDS - since_last)
 
-    if "error" in obj:
-        raise RuntimeError(obj["error"])
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                _last_rpc_at = time.time()
+                obj = json.load(response)
 
-    return obj["result"]
+            if "error" in obj:
+                raise RuntimeError(obj["error"])
+
+            return obj["result"]
+
+        except urllib.error.HTTPError as exc:
+            _last_rpc_at = time.time()
+
+            if exc.code != 429 or attempt == RPC_MAX_RETRIES - 1:
+                raise
+
+            retry_after = exc.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    delay = float(retry_after)
+                except ValueError:
+                    delay = None
+            else:
+                delay = None
+
+            if delay is None:
+                delay = (
+                    RPC_BASE_BACKOFF_SECONDS * (2 ** attempt)
+                    + random.uniform(0.0, 0.5)
+                )
+
+            print(
+                f"RATE LIMIT: {method} attempt {attempt + 1}/"
+                f"{RPC_MAX_RETRIES}; sleeping {delay:.2f}s"
+            )
+            time.sleep(delay)
+
+    raise RuntimeError(f"RPC retries exhausted for {method}")
 
 
 def normalize_address(value):
@@ -567,7 +612,7 @@ def main():
     previous = load_json(
         ANALYSIS_STATE,
         {
-            "version": 1,
+            "version": 2,
             "tokens": {},
             "pools": {},
             "failed_ranges": {},
@@ -597,7 +642,7 @@ def main():
             head,
             max(0, head_ts - FIRST_RUN_LOOKBACK_SECONDS),
         )
-        mode = "baseline_3h"
+        mode = "baseline_90m"
 
     # Carry retry gaps forward.
     previous_failed = previous.get("failed_ranges") or {}
@@ -696,7 +741,14 @@ def main():
 
     def ts_for_block(block_number):
         if block_number not in block_ts_cache:
-            block_ts_cache[block_number] = block_timestamp(block_number)
+            try:
+                block_ts_cache[block_number] = block_timestamp(block_number)
+            except Exception as exc:
+                print(
+                    f"WARNING: timestamp lookup failed for block "
+                    f"{block_number}: {exc}"
+                )
+                block_ts_cache[block_number] = None
         return block_ts_cache[block_number]
 
     latest_rows = []
@@ -761,10 +813,13 @@ def main():
             freshest_swap_block = freshest["swap"]["block"]
             freshest_swap_tx = freshest["swap"]["tx"]
             swap_ts = ts_for_block(freshest_swap_block)
-            price_age_seconds = max(0, head_ts - swap_ts)
+
+            if swap_ts is not None:
+                price_age_seconds = max(0, head_ts - swap_ts)
 
             if (
                 freshest["price_usd"] is not None
+                and price_age_seconds is not None
                 and price_age_seconds <= PRICE_MAX_AGE_SECONDS
             ):
                 price_usd = freshest["price_usd"]
@@ -880,12 +935,16 @@ def main():
     analysis_coverage = "COMPLETE_FOR_IMPLEMENTED_CHECKS" if not failed_ranges else "PARTIAL"
 
     output_state = {
-        "version": 1,
+        "version": 2,
         "mode": mode,
         "last_block": head,
         "last_block_timestamp": head_ts,
         "analysis_start_block": history_start,
-        "analysis_start_timestamp": block_timestamp(history_start),
+        "analysis_start_timestamp": (
+            ts_for_block(history_start)
+            if history_start is not None
+            else None
+        ),
         "hot_limit": HOT_LIMIT,
         "hot_contracts_analyzed": len(hot),
         "weth_usd": weth_usd,
@@ -902,7 +961,7 @@ def main():
     }
 
     latest_output = {
-        "version": 1,
+        "version": 2,
         "head_block": head,
         "head_timestamp": head_ts,
         "coverage_status": analysis_coverage,

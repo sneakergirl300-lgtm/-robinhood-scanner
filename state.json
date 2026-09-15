@@ -1,65 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 63686888,
-  "last_block_timestamp": 1789478231,
-  "scan_start": 63616561,
-  "scan_start_timestamp": 1789471043,
-  "scan_end": 63686888,
-  "scan_end_timestamp": 1789478231,
-  "scan_window_seconds": 7188,
+  "last_block": 63711030,
+  "last_block_timestamp": 1789480728,
+  "scan_start": 63634122,
+  "scan_start_timestamp": 1789472831,
+  "scan_end": 63711030,
+  "scan_end_timestamp": 1789480728,
+  "scan_window_seconds": 7897,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 63597865,
-        "end": 63598364
-      },
-      {
-        "start": 63600729,
-        "end": 63602728
-      },
-      {
-        "start": 63607729,
-        "end": 63608228
-      },
-      {
-        "start": 63608729,
-        "end": 63609228
-      },
-      {
-        "start": 63609729,
-        "end": 63610228
-      },
-      {
-        "start": 63610729,
-        "end": 63611228
-      },
-      {
-        "start": 63613729,
-        "end": 63614228
-      },
-      {
-        "start": 63616561,
-        "end": 63686888
-      }
-    ],
-    "factory": [
-      {
-        "start": 63616561,
-        "end": 63686888
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 63616561,
-        "end": 63686888
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 63607729,
@@ -95,75 +47,7 @@
       },
       {
         "start": 63634061,
-        "end": 63634560
-      },
-      {
-        "start": 63638561,
-        "end": 63639060
-      },
-      {
-        "start": 63640561,
-        "end": 63641060
-      },
-      {
-        "start": 63641561,
-        "end": 63642060
-      },
-      {
-        "start": 63644561,
-        "end": 63645060
-      },
-      {
-        "start": 63645561,
-        "end": 63646060
-      },
-      {
-        "start": 63648561,
-        "end": 63649060
-      },
-      {
-        "start": 63650061,
-        "end": 63650560
-      },
-      {
-        "start": 63651061,
-        "end": 63651560
-      },
-      {
-        "start": 63652061,
-        "end": 63652560
-      },
-      {
-        "start": 63659561,
-        "end": 63660060
-      },
-      {
-        "start": 63662561,
-        "end": 63663060
-      },
-      {
-        "start": 63664061,
-        "end": 63664560
-      },
-      {
-        "start": 63676061,
-        "end": 63676560
-      },
-      {
-        "start": 63678061,
-        "end": 63678560
-      },
-      {
-        "start": 63681061,
-        "end": 63681560
-      },
-      {
-        "start": 63682561,
-        "end": 63683060
-      },
-      {
-        "start": 63686061,
-        "end": 63686560
+        "end": 63711030
       }
     ],
     "factory": [
@@ -176,20 +60,8 @@
         "end": 63624560
       },
       {
-        "start": 63639561,
-        "end": 63640060
-      },
-      {
-        "start": 63652061,
-        "end": 63652560
-      },
-      {
-        "start": 63654061,
-        "end": 63654560
-      },
-      {
-        "start": 63655061,
-        "end": 63655560
+        "start": 63634122,
+        "end": 63711030
       }
     ],
     "uniswap_v4_initialize": [
@@ -210,52 +82,154 @@
         "end": 63626560
       },
       {
-        "start": 63639061,
-        "end": 63639560
-      },
-      {
-        "start": 63679061,
-        "end": 63679560
-      },
-      {
-        "start": 63682561,
-        "end": 63683060
+        "start": 63634122,
+        "end": 63711030
       }
     ]
   },
-  "zero_mint_logs": 102281,
-  "erc20_zero_mint_logs": 75531,
-  "factory_logs": 5355,
-  "factory_corroborated_token_mints": 4441,
-  "uniswap_v4_initialize_logs": 1271,
-  "events_seen": 108907,
-  "unique_contracts_this_run": 3450,
-  "unique_candidates_this_run": 3450,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63619061,
+        "end": 63620060
+      },
+      {
+        "start": 63641061,
+        "end": 63642060
+      },
+      {
+        "start": 63652061,
+        "end": 63653060
+      },
+      {
+        "start": 63653561,
+        "end": 63654060
+      },
+      {
+        "start": 63657061,
+        "end": 63657560
+      },
+      {
+        "start": 63663561,
+        "end": 63664060
+      },
+      {
+        "start": 63668061,
+        "end": 63668560
+      },
+      {
+        "start": 63675061,
+        "end": 63675560
+      },
+      {
+        "start": 63677061,
+        "end": 63677560
+      },
+      {
+        "start": 63687061,
+        "end": 63688060
+      },
+      {
+        "start": 63690061,
+        "end": 63690560
+      },
+      {
+        "start": 63695561,
+        "end": 63696560
+      },
+      {
+        "start": 63697061,
+        "end": 63697560
+      },
+      {
+        "start": 63698561,
+        "end": 63699060
+      },
+      {
+        "start": 63699561,
+        "end": 63701560
+      },
+      {
+        "start": 63702061,
+        "end": 63703060
+      },
+      {
+        "start": 63704061,
+        "end": 63705560
+      },
+      {
+        "start": 63706561,
+        "end": 63707060
+      },
+      {
+        "start": 63707561,
+        "end": 63708060
+      },
+      {
+        "start": 63708561,
+        "end": 63711030
+      }
+    ],
+    "factory": [
+      {
+        "start": 63624061,
+        "end": 63624560
+      },
+      {
+        "start": 63636122,
+        "end": 63637621
+      },
+      {
+        "start": 63638122,
+        "end": 63638621
+      },
+      {
+        "start": 63643122,
+        "end": 63643621
+      },
+      {
+        "start": 63645622,
+        "end": 63646121
+      },
+      {
+        "start": 63656622,
+        "end": 63657121
+      }
+    ]
+  },
+  "zero_mint_logs": 139079,
+  "erc20_zero_mint_logs": 103591,
+  "factory_logs": 8240,
+  "factory_corroborated_token_mints": 7020,
+  "uniswap_v4_initialize_logs": 1147,
+  "events_seen": 148466,
+  "unique_contracts_this_run": 4087,
+  "unique_candidates_this_run": 4087,
   "candidate_source_counts": {
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 38,
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 40,
     "factory_mint:0x16cf6788b762ee8969744586ed16fc5705140dd7": 1,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 17,
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 78,
     "factory_mint:0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d": 1,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 1878,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 2202,
     "factory_mint:0xd3f2cc1731b7fd17f28798835c2e02f0a1839a94": 1,
-    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 6,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 902,
-    "factory_mint:0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": 1,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 196,
-    "uniswap_v4_initialize": 904,
-    "zero_address_mint": 2972
+    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 7,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 1142,
+    "factory_mint:0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": 2,
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 236,
+    "uniswap_v4_initialize": 841,
+    "zero_address_mint": 3781
   },
   "classification_counts": {
-    "NEW_LAUNCH": 2972,
-    "NEW_MARKET": 478
+    "NEW_LAUNCH": 3781,
+    "NEW_MARKET": 306
   },
-  "new_contracts_added": 866,
-  "new_candidates": 866,
-  "existing_contracts_updated": 146,
-  "stored_candidates": 64080,
-  "total_persisted_contracts": 64080,
+  "new_contracts_added": 1024,
+  "new_candidates": 1024,
+  "existing_contracts_updated": 238,
+  "stored_candidates": 65104,
+  "total_persisted_contracts": 65104,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 65.75,
-  "updated_at_unix": 1789478300,
+  "runtime_seconds": 713.25,
+  "updated_at_unix": 1789481444,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

@@ -1,21 +1,21 @@
 {
   "version": 3,
-  "generated_at": 1789469119,
+  "generated_at": 1789470124,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.538,
+  "runtime_seconds": 0.585,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789469098,
-  "collector_age_seconds": 20,
-  "universe_count": 56874,
+  "collector_updated_at": 1789470098,
+  "collector_age_seconds": 25,
+  "universe_count": 60294,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 8687,
+  "due_remaining": 12530,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
     {
-      "address": "0x087633f8a502b30ba40712f56ceba4f569c657d0",
+      "address": "0x4fc59c42653e052c7ab5c8381f839e2d70504131",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -32,14 +32,15 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590903,
-      "last_seen_block": 63590903,
+      "discovered_at": 1789460327,
+      "first_seen_block": 63500317,
+      "last_seen_block": 63605228,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789460464,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -56,7 +57,7 @@
       "last_error": null
     },
     {
-      "address": "0xa97320d67cdbef66769247d2a27a8cdd2f6bbd82",
+      "address": "0x6c6878da102ccebf19249382fdccc8dd76f58fb4",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -73,14 +74,17 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590898,
-      "last_seen_block": 63590898,
-      "lane": "NEW",
+      "discovered_at": 1789393649,
+      "first_seen_block": 62840970,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -97,7 +101,7 @@
       "last_error": null
     },
     {
-      "address": "0xcea55214fbe6bcebda5449cd6b39fd6ad53ccea7",
+      "address": "0x6ca674b565069e87641efbaf4525c741781c5643",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -114,14 +118,15 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590883,
-      "last_seen_block": 63590883,
-      "lane": "NEW",
+      "discovered_at": 1789349206,
+      "first_seen_block": 62401393,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -138,7 +143,7 @@
       "last_error": null
     },
     {
-      "address": "0x4f5149769e3f5a1a6bd7f333fac8d4fe74e4d514",
+      "address": "0xa6769f6dbe98a69f1ef7edccf6cf2eb26f0fc838",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -155,14 +160,15 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590860,
-      "last_seen_block": 63590860,
-      "lane": "NEW",
+      "discovered_at": 1789393764,
+      "first_seen_block": 62817324,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -179,7 +185,7 @@
       "last_error": null
     },
     {
-      "address": "0x8a540ba44a7551514cdac25f73b097ad3a25e7c4",
+      "address": "0xc795f4564d5792c9c4876aaa349e867c17e0abe6",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -196,14 +202,17 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590836,
-      "last_seen_block": 63590836,
-      "lane": "NEW",
+      "discovered_at": 1789393649,
+      "first_seen_block": 62840492,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789453684,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -220,7 +229,7 @@
       "last_error": null
     },
     {
-      "address": "0x3e720c84082489a761d04e52780bc6d5aa5bba31",
+      "address": "0xd6491e08776d6c0df4ec4b8be0a1ef6ab8ce3bd5",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -237,14 +246,17 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590807,
-      "last_seen_block": 63590807,
-      "lane": "NEW",
+      "discovered_at": 1789391925,
+      "first_seen_block": 62830720,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -261,7 +273,7 @@
       "last_error": null
     },
     {
-      "address": "0xb5ebeb9c57571f7f0b3db6d079c23842f584ceb3",
+      "address": "0xdad2bf55e9f232a63664a423f7d9cf58250af88e",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -278,14 +290,17 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590791,
-      "last_seen_block": 63590791,
-      "lane": "NEW",
+      "discovered_at": 1789391925,
+      "first_seen_block": 62833730,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -302,7 +317,7 @@
       "last_error": null
     },
     {
-      "address": "0x025c2f52fd89e4098fff77cd309643bd9e0d6480",
+      "address": "0xe0827dcfe183ae0f5efbb85e1dc2f0f145e41e18",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -319,14 +334,16 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
+        "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789469070,
-      "first_seen_block": 63590789,
-      "last_seen_block": 63590789,
-      "lane": "NEW",
+      "discovered_at": 1789393649,
+      "first_seen_block": 62834182,
+      "last_seen_block": 63605228,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789469118,
+      "next_due": 1789470123,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],

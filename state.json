@@ -1,78 +1,115 @@
 {
   "collector_version": 7,
-  "last_block": 63757464,
-  "last_block_timestamp": 1789485549,
-  "scan_start": 63698613,
-  "scan_start_timestamp": 1789479448,
-  "scan_end": 63757464,
-  "scan_end_timestamp": 1789485549,
-  "scan_window_seconds": 6101,
+  "last_block": 63771814,
+  "last_block_timestamp": 1789487021,
+  "scan_start": 63705373,
+  "scan_start_timestamp": 1789480149,
+  "scan_end": 63771814,
+  "scan_end_timestamp": 1789487021,
+  "scan_window_seconds": 6872,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
-  "coverage_status": "COMPLETE",
-  "coverage_complete": true,
+  "coverage_status": "PARTIAL",
+  "coverage_complete": false,
   "requested_ranges": {
     "zero_mint": [
       {
-        "start": 63678059,
-        "end": 63680058
-      },
-      {
-        "start": 63698059,
-        "end": 63698558
-      },
-      {
-        "start": 63698613,
-        "end": 63757464
+        "start": 63705373,
+        "end": 63771814
       }
     ],
     "factory": [
       {
-        "start": 63698613,
-        "end": 63757464
+        "start": 63705373,
+        "end": 63771814
       }
     ],
     "uniswap_v4_initialize": [
       {
-        "start": 63698613,
-        "end": 63757464
+        "start": 63705373,
+        "end": 63771814
       }
     ]
   },
-  "failed_ranges": {},
-  "zero_mint_logs": 162850,
-  "erc20_zero_mint_logs": 122485,
-  "factory_logs": 9588,
-  "factory_corroborated_token_mints": 13277,
-  "uniswap_v4_initialize_logs": 1062,
-  "events_seen": 173500,
-  "unique_contracts_this_run": 4133,
-  "unique_candidates_this_run": 4133,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63706873,
+        "end": 63707372
+      },
+      {
+        "start": 63709873,
+        "end": 63710372
+      },
+      {
+        "start": 63712373,
+        "end": 63712872
+      },
+      {
+        "start": 63726373,
+        "end": 63726872
+      },
+      {
+        "start": 63733373,
+        "end": 63733872
+      },
+      {
+        "start": 63736873,
+        "end": 63737372
+      },
+      {
+        "start": 63746873,
+        "end": 63747372
+      },
+      {
+        "start": 63750873,
+        "end": 63751372
+      },
+      {
+        "start": 63757873,
+        "end": 63758372
+      }
+    ],
+    "factory": [
+      {
+        "start": 63751373,
+        "end": 63751872
+      }
+    ]
+  },
+  "zero_mint_logs": 160353,
+  "erc20_zero_mint_logs": 120907,
+  "factory_logs": 10715,
+  "factory_corroborated_token_mints": 13821,
+  "uniswap_v4_initialize_logs": 1218,
+  "events_seen": 172286,
+  "unique_contracts_this_run": 4363,
+  "unique_candidates_this_run": 4363,
   "candidate_source_counts": {
     "factory_mint:0x00004c4ccc709ef590f7c81102c0689f0263d4e9": 2,
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 31,
-    "factory_mint:0x16cf6788b762ee8969744586ed16fc5705140dd7": 2,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 251,
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 33,
+    "factory_mint:0x16cf6788b762ee8969744586ed16fc5705140dd7": 3,
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 262,
     "factory_mint:0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d": 1,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 2554,
-    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 4,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 1449,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 2737,
+    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 7,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 1555,
     "factory_mint:0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": 2,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 342,
-    "uniswap_v4_initialize": 891,
-    "zero_address_mint": 3961
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 334,
+    "uniswap_v4_initialize": 1029,
+    "zero_address_mint": 4079
   },
   "classification_counts": {
-    "NEW_LAUNCH": 3961,
-    "NEW_MARKET": 172
+    "NEW_LAUNCH": 4079,
+    "NEW_MARKET": 284
   },
-  "new_contracts_added": 462,
-  "new_candidates": 462,
-  "existing_contracts_updated": 90,
-  "stored_candidates": 68558,
-  "total_persisted_contracts": 68558,
+  "new_contracts_added": 946,
+  "new_candidates": 946,
+  "existing_contracts_updated": 166,
+  "stored_candidates": 69504,
+  "total_persisted_contracts": 69504,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 455.69,
-  "updated_at_unix": 1789486005,
+  "runtime_seconds": 478.19,
+  "updated_at_unix": 1789487500,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

@@ -1,185 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 63261315,
-  "last_block_timestamp": 1789435005,
-  "scan_start": 63191123,
-  "scan_start_timestamp": 1789427876,
-  "scan_end": 63261315,
-  "scan_end_timestamp": 1789435005,
-  "scan_window_seconds": 7129,
+  "last_block": 63277656,
+  "last_block_timestamp": 1789436673,
+  "scan_start": 63208129,
+  "scan_start_timestamp": 1789429605,
+  "scan_end": 63277656,
+  "scan_end_timestamp": 1789436673,
+  "scan_window_seconds": 7068,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 63123234,
-        "end": 63124733
-      },
-      {
-        "start": 63151236,
-        "end": 63153735
-      },
-      {
-        "start": 63154236,
-        "end": 63154735
-      },
-      {
-        "start": 63155236,
-        "end": 63159735
-      },
-      {
-        "start": 63160236,
-        "end": 63161735
-      },
-      {
-        "start": 63162236,
-        "end": 63165735
-      },
-      {
-        "start": 63166236,
-        "end": 63168235
-      },
-      {
-        "start": 63168736,
-        "end": 63171735
-      },
-      {
-        "start": 63176146,
-        "end": 63181145
-      },
-      {
-        "start": 63181646,
-        "end": 63182145
-      },
-      {
-        "start": 63191123,
-        "end": 63261315
-      }
-    ],
-    "factory": [
-      {
-        "start": 63104734,
-        "end": 63105233
-      },
-      {
-        "start": 63114234,
-        "end": 63114733
-      },
-      {
-        "start": 63124500,
-        "end": 63124999
-      },
-      {
-        "start": 63133500,
-        "end": 63133999
-      },
-      {
-        "start": 63141500,
-        "end": 63141999
-      },
-      {
-        "start": 63156000,
-        "end": 63156499
-      },
-      {
-        "start": 63160000,
-        "end": 63160499
-      },
-      {
-        "start": 63162500,
-        "end": 63162999
-      },
-      {
-        "start": 63164500,
-        "end": 63164999
-      },
-      {
-        "start": 63166500,
-        "end": 63166999
-      },
-      {
-        "start": 63170500,
-        "end": 63170999
-      },
-      {
-        "start": 63174000,
-        "end": 63174499
-      },
-      {
-        "start": 63176000,
-        "end": 63176499
-      },
-      {
-        "start": 63177000,
-        "end": 63177499
-      },
-      {
-        "start": 63178000,
-        "end": 63178499
-      },
-      {
-        "start": 63179000,
-        "end": 63179499
-      },
-      {
-        "start": 63180000,
-        "end": 63180499
-      },
-      {
-        "start": 63181000,
-        "end": 63181499
-      },
-      {
-        "start": 63182000,
-        "end": 63182499
-      },
-      {
-        "start": 63183000,
-        "end": 63183499
-      },
-      {
-        "start": 63184000,
-        "end": 63184499
-      },
-      {
-        "start": 63185000,
-        "end": 63185499
-      },
-      {
-        "start": 63186000,
-        "end": 63186499
-      },
-      {
-        "start": 63187000,
-        "end": 63187499
-      },
-      {
-        "start": 63188000,
-        "end": 63188499
-      },
-      {
-        "start": 63189000,
-        "end": 63189499
-      },
-      {
-        "start": 63190000,
-        "end": 63190499
-      },
-      {
-        "start": 63191000,
-        "end": 63261315
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 63191123,
-        "end": 63261315
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 63124234,
@@ -190,20 +22,8 @@
         "end": 63151735
       },
       {
-        "start": 63218623,
-        "end": 63219122
-      },
-      {
-        "start": 63220623,
-        "end": 63221122
-      },
-      {
-        "start": 63221623,
-        "end": 63222122
-      },
-      {
-        "start": 63235623,
-        "end": 63261315
+        "start": 63208129,
+        "end": 63277656
       }
     ],
     "factory": [
@@ -317,37 +137,338 @@
       },
       {
         "start": 63191000,
-        "end": 63261315
+        "end": 63277656
       }
     ],
     "uniswap_v4_initialize": [
       {
         "start": 63191123,
-        "end": 63261315
+        "end": 63277656
       }
     ]
   },
-  "zero_mint_logs": 145450,
-  "erc20_zero_mint_logs": 118504,
-  "factory_logs": 0,
-  "factory_corroborated_token_mints": 0,
-  "uniswap_v4_initialize_logs": 0,
-  "events_seen": 145450,
-  "unique_contracts_this_run": 6162,
-  "unique_candidates_this_run": 6162,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63209129,
+        "end": 63218628
+      },
+      {
+        "start": 63219129,
+        "end": 63229128
+      },
+      {
+        "start": 63233629,
+        "end": 63234128
+      },
+      {
+        "start": 63246129,
+        "end": 63246628
+      }
+    ],
+    "factory": [
+      {
+        "start": 63133500,
+        "end": 63133999
+      },
+      {
+        "start": 63156000,
+        "end": 63156499
+      },
+      {
+        "start": 63164500,
+        "end": 63164999
+      },
+      {
+        "start": 63170500,
+        "end": 63170999
+      },
+      {
+        "start": 63177000,
+        "end": 63177499
+      },
+      {
+        "start": 63179000,
+        "end": 63179499
+      },
+      {
+        "start": 63181000,
+        "end": 63181499
+      },
+      {
+        "start": 63183000,
+        "end": 63183499
+      },
+      {
+        "start": 63185000,
+        "end": 63185499
+      },
+      {
+        "start": 63187000,
+        "end": 63187499
+      },
+      {
+        "start": 63189000,
+        "end": 63189499
+      },
+      {
+        "start": 63191000,
+        "end": 63191499
+      },
+      {
+        "start": 63192500,
+        "end": 63192999
+      },
+      {
+        "start": 63193500,
+        "end": 63193999
+      },
+      {
+        "start": 63194500,
+        "end": 63194999
+      },
+      {
+        "start": 63195500,
+        "end": 63195999
+      },
+      {
+        "start": 63197000,
+        "end": 63197499
+      },
+      {
+        "start": 63198000,
+        "end": 63198499
+      },
+      {
+        "start": 63199000,
+        "end": 63199499
+      },
+      {
+        "start": 63200500,
+        "end": 63200999
+      },
+      {
+        "start": 63201500,
+        "end": 63201999
+      },
+      {
+        "start": 63203000,
+        "end": 63203499
+      },
+      {
+        "start": 63204500,
+        "end": 63204999
+      },
+      {
+        "start": 63205500,
+        "end": 63205999
+      },
+      {
+        "start": 63206500,
+        "end": 63206999
+      },
+      {
+        "start": 63207500,
+        "end": 63207999
+      },
+      {
+        "start": 63209500,
+        "end": 63209999
+      },
+      {
+        "start": 63211000,
+        "end": 63211499
+      },
+      {
+        "start": 63212000,
+        "end": 63212499
+      },
+      {
+        "start": 63213500,
+        "end": 63213999
+      },
+      {
+        "start": 63214500,
+        "end": 63214999
+      },
+      {
+        "start": 63215500,
+        "end": 63215999
+      },
+      {
+        "start": 63217000,
+        "end": 63217499
+      },
+      {
+        "start": 63218000,
+        "end": 63218499
+      },
+      {
+        "start": 63219000,
+        "end": 63219499
+      },
+      {
+        "start": 63220500,
+        "end": 63220999
+      },
+      {
+        "start": 63222500,
+        "end": 63222999
+      },
+      {
+        "start": 63223500,
+        "end": 63223999
+      },
+      {
+        "start": 63224500,
+        "end": 63224999
+      },
+      {
+        "start": 63226000,
+        "end": 63226499
+      },
+      {
+        "start": 63231000,
+        "end": 63231499
+      },
+      {
+        "start": 63232500,
+        "end": 63232999
+      },
+      {
+        "start": 63235500,
+        "end": 63235999
+      },
+      {
+        "start": 63237500,
+        "end": 63237999
+      },
+      {
+        "start": 63238500,
+        "end": 63238999
+      },
+      {
+        "start": 63239500,
+        "end": 63239999
+      },
+      {
+        "start": 63240500,
+        "end": 63240999
+      },
+      {
+        "start": 63242000,
+        "end": 63242499
+      },
+      {
+        "start": 63243000,
+        "end": 63243499
+      },
+      {
+        "start": 63244000,
+        "end": 63244499
+      },
+      {
+        "start": 63245000,
+        "end": 63245499
+      },
+      {
+        "start": 63247000,
+        "end": 63247499
+      },
+      {
+        "start": 63248000,
+        "end": 63248499
+      },
+      {
+        "start": 63249000,
+        "end": 63249499
+      },
+      {
+        "start": 63252000,
+        "end": 63252499
+      },
+      {
+        "start": 63254500,
+        "end": 63254999
+      },
+      {
+        "start": 63256000,
+        "end": 63256499
+      },
+      {
+        "start": 63257500,
+        "end": 63257999
+      },
+      {
+        "start": 63259000,
+        "end": 63259499
+      },
+      {
+        "start": 63260500,
+        "end": 63260999
+      },
+      {
+        "start": 63264500,
+        "end": 63264999
+      },
+      {
+        "start": 63268000,
+        "end": 63268499
+      },
+      {
+        "start": 63272500,
+        "end": 63272999
+      },
+      {
+        "start": 63273500,
+        "end": 63273999
+      },
+      {
+        "start": 63274500,
+        "end": 63274999
+      },
+      {
+        "start": 63276000,
+        "end": 63276499
+      }
+    ],
+    "uniswap_v4_initialize": [
+      {
+        "start": 63200123,
+        "end": 63200622
+      }
+    ]
+  },
+  "zero_mint_logs": 109757,
+  "erc20_zero_mint_logs": 94706,
+  "factory_logs": 12042,
+  "factory_corroborated_token_mints": 5974,
+  "uniswap_v4_initialize_logs": 1170,
+  "events_seen": 122969,
+  "unique_contracts_this_run": 3351,
+  "unique_candidates_this_run": 3351,
   "candidate_source_counts": {
-    "zero_address_mint": 6162
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 12,
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 109,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 1516,
+    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 1,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 583,
+    "factory_mint:0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": 8,
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 154,
+    "uniswap_v4_initialize": 835,
+    "zero_address_mint": 2938
   },
   "classification_counts": {
-    "NEW_LAUNCH": 6162
+    "NEW_LAUNCH": 2938,
+    "NEW_MARKET": 413
   },
-  "new_contracts_added": 91,
-  "new_candidates": 91,
-  "existing_contracts_updated": 17,
-  "stored_candidates": 43502,
-  "total_persisted_contracts": 43502,
+  "new_contracts_added": 1533,
+  "new_candidates": 1533,
+  "existing_contracts_updated": 554,
+  "stored_candidates": 45035,
+  "total_persisted_contracts": 45035,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 82.59,
-  "updated_at_unix": 1789435087,
+  "runtime_seconds": 58.78,
+  "updated_at_unix": 1789436732,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

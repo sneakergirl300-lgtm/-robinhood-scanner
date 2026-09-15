@@ -1,21 +1,21 @@
 {
   "version": 3,
-  "generated_at": 1789492000,
+  "generated_at": 1789492895,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.667,
+  "runtime_seconds": 0.532,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789491975,
+  "collector_updated_at": 1789492870,
   "collector_age_seconds": 24,
-  "universe_count": 73208,
+  "universe_count": 73987,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 13880,
+  "due_remaining": 14689,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
     {
-      "address": "0x4c04014f60af5da0985041ad3df1fd4163fb6f60",
+      "address": "0xbd7de9a738364a337edd8cd5c5670a494eafd0c5",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -32,16 +32,15 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
-        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815261,
-      "last_seen_block": 63815261,
+      "discovered_at": 1789492734,
+      "first_seen_block": 63821734,
+      "last_seen_block": 63826265,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789491999,
+      "next_due": 1789492894,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -58,7 +57,7 @@
       "last_error": null
     },
     {
-      "address": "0x6742883eef788e2424ce5a1b0d4303144aaec0a5",
+      "address": "0x357d2a9cdefebe90869e17eea17a6ec3f7121e18",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -77,12 +76,12 @@
       "discovery_sources": [
         "uniswap_v4_initialize"
       ],
-      "discovered_at": 1789380546,
-      "first_seen_block": 62692268,
-      "last_seen_block": 63815259,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789492867,
+      "first_seen_block": 63825951,
+      "last_seen_block": 63826212,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789484969,
+      "next_due": 1789492894,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -99,7 +98,7 @@
       "last_error": null
     },
     {
-      "address": "0xaf502aa85605c86172b64af8313c0581959c1110",
+      "address": "0x6fbfa67c75fc4abd83d397a8a11878e4f6e2ef16",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -114,16 +113,16 @@
           "creator_history"
         ]
       },
-      "classification": "NEW_LAUNCH",
+      "classification": "NEW_MARKET",
       "discovery_sources": [
-        "zero_address_mint"
+        "uniswap_v4_initialize"
       ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815255,
-      "last_seen_block": 63815255,
+      "discovered_at": 1789492867,
+      "first_seen_block": 63826188,
+      "last_seen_block": 63826188,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789491999,
+      "next_due": 1789492894,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -140,136 +139,7 @@
       "last_error": null
     },
     {
-      "address": "0x67bc7475d5c29f314855271bd9efbde62c7c4ab1",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "classification": "NEW_LAUNCH",
-      "discovery_sources": [
-        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
-        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
-        "zero_address_mint"
-      ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815236,
-      "last_seen_block": 63815236,
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789491999,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0x0cf5f5904da337cae9ab08690c74df8027b65c23",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "classification": "NEW_LAUNCH",
-      "discovery_sources": [
-        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
-        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
-        "zero_address_mint"
-      ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815230,
-      "last_seen_block": 63815230,
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789491999,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0xb299d970a9f702fdd325eac885b1486c0ccc43eb",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "classification": "NEW_LAUNCH",
-      "discovery_sources": [
-        "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
-        "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
-        "zero_address_mint"
-      ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815230,
-      "last_seen_block": 63815230,
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789491999,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0x1937cad42b17d43bb2b347ce16d5288887c46c33",
+      "address": "0x32ac8c1d7672667d5ebdea22935f7b06fc8d496f",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -289,12 +159,12 @@
         "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789355566,
-      "first_seen_block": 62463383,
-      "last_seen_block": 63815221,
+      "discovered_at": 1789358276,
+      "first_seen_block": 62500659,
+      "last_seen_block": 63826055,
       "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789481470,
+      "next_due": 1789475217,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -311,7 +181,48 @@
       "last_error": null
     },
     {
-      "address": "0x96414d79e001e424d586b01b74bf1037b5701e18",
+      "address": "0x550d1bd7da084e8ce930b6fdaca12e579ed7af77",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "classification": "NEW_MARKET",
+      "discovery_sources": [
+        "uniswap_v4_initialize"
+      ],
+      "discovered_at": 1789492867,
+      "first_seen_block": 63826055,
+      "last_seen_block": 63826055,
+      "lane": "NEW",
+      "last_attempt": 0,
+      "next_due": 1789492894,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0x47d4e6597aa4b389aab027878a0aaee25bed6337",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -328,16 +239,98 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862",
         "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789491665,
-      "first_seen_block": 63815221,
-      "last_seen_block": 63815221,
+      "discovered_at": 1789436730,
+      "first_seen_block": 63258594,
+      "last_seen_block": 63825961,
+      "lane": "FOLLOWUP",
+      "last_attempt": 0,
+      "next_due": 1789492894,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0x92e58d39d98a305d6de3d48843712e8eae2ca85e",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "classification": "NEW_MARKET",
+      "discovery_sources": [
+        "uniswap_v4_initialize"
+      ],
+      "discovered_at": 1789492867,
+      "first_seen_block": 63825961,
+      "last_seen_block": 63825961,
       "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789491999,
+      "next_due": 1789492894,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "classification": "NEW_LAUNCH",
+      "discovery_sources": [
+        "uniswap_v4_initialize",
+        "zero_address_mint"
+      ],
+      "discovered_at": 1789360837,
+      "first_seen_block": 62523629,
+      "last_seen_block": 63825951,
+      "lane": "FOLLOWUP",
+      "last_attempt": 0,
+      "next_due": 1789478324,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],

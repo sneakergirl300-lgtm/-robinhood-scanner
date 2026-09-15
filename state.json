@@ -1,65 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 63815271,
-  "last_block_timestamp": 1789491469,
-  "scan_start": 63754408,
-  "scan_start_timestamp": 1789485229,
-  "scan_end": 63815271,
-  "scan_end_timestamp": 1789491469,
-  "scan_window_seconds": 6240,
+  "last_block": 63826277,
+  "last_block_timestamp": 1789492610,
+  "scan_start": 63762532,
+  "scan_start_timestamp": 1789486069,
+  "scan_end": 63826277,
+  "scan_end_timestamp": 1789492610,
+  "scan_window_seconds": 6541,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 63742934,
-        "end": 63743433
-      },
-      {
-        "start": 63744434,
-        "end": 63744933
-      },
-      {
-        "start": 63748934,
-        "end": 63749433
-      },
-      {
-        "start": 63749934,
-        "end": 63750433
-      },
-      {
-        "start": 63754408,
-        "end": 63815271
-      }
-    ],
-    "factory": [
-      {
-        "start": 63739934,
-        "end": 63741933
-      },
-      {
-        "start": 63744434,
-        "end": 63746433
-      },
-      {
-        "start": 63750434,
-        "end": 63751433
-      },
-      {
-        "start": 63751934,
-        "end": 63815271
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 63754408,
-        "end": 63815271
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 63757408,
@@ -70,47 +22,60 @@
         "end": 63759407
       },
       {
-        "start": 63800908,
-        "end": 63801407
-      },
+        "start": 63762532,
+        "end": 63826277
+      }
+    ],
+    "factory": [
       {
-        "start": 63809908,
-        "end": 63810407
+        "start": 63762532,
+        "end": 63826277
+      }
+    ],
+    "uniswap_v4_initialize": [
+      {
+        "start": 63762532,
+        "end": 63826277
       }
     ]
   },
-  "zero_mint_logs": 172525,
-  "erc20_zero_mint_logs": 130481,
-  "factory_logs": 12038,
-  "factory_corroborated_token_mints": 14534,
-  "uniswap_v4_initialize_logs": 1168,
-  "events_seen": 185731,
-  "unique_contracts_this_run": 5267,
-  "unique_candidates_this_run": 5267,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63822532,
+        "end": 63826277
+      }
+    ],
+    "factory": [
+      {
+        "start": 63762532,
+        "end": 63825531
+      }
+    ]
+  },
+  "zero_mint_logs": 187728,
+  "erc20_zero_mint_logs": 139462,
+  "factory_logs": 100,
+  "factory_corroborated_token_mints": 0,
+  "uniswap_v4_initialize_logs": 1299,
+  "events_seen": 189127,
+  "unique_contracts_this_run": 5477,
+  "unique_candidates_this_run": 5477,
   "candidate_source_counts": {
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 43,
-    "factory_mint:0x16cf6788b762ee8969744586ed16fc5705140dd7": 2,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 247,
-    "factory_mint:0x6e4910ea5a04376032f6564da9a9e4e88b7a87c1": 1,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 3642,
-    "factory_mint:0xd3f2cc1731b7fd17f28798835c2e02f0a1839a94": 1,
-    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 3,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 1851,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 336,
-    "uniswap_v4_initialize": 1011,
-    "zero_address_mint": 5046
+    "uniswap_v4_initialize": 1114,
+    "zero_address_mint": 5271
   },
   "classification_counts": {
-    "NEW_LAUNCH": 5046,
-    "NEW_MARKET": 221
+    "NEW_LAUNCH": 5271,
+    "NEW_MARKET": 206
   },
-  "new_contracts_added": 868,
-  "new_candidates": 868,
-  "existing_contracts_updated": 145,
-  "stored_candidates": 73208,
-  "total_persisted_contracts": 73208,
+  "new_contracts_added": 779,
+  "new_candidates": 779,
+  "existing_contracts_updated": 142,
+  "stored_candidates": 73987,
+  "total_persisted_contracts": 73987,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 504.91,
-  "updated_at_unix": 1789491975,
+  "runtime_seconds": 259.02,
+  "updated_at_unix": 1789492870,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

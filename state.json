@@ -1,93 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 63999869,
-  "last_block_timestamp": 1789510514,
-  "scan_start": 63933987,
-  "scan_start_timestamp": 1789503780,
-  "scan_end": 63999869,
-  "scan_end_timestamp": 1789510514,
-  "scan_window_seconds": 6734,
+  "last_block": 64015258,
+  "last_block_timestamp": 1789512058,
+  "scan_start": 63946994,
+  "scan_start_timestamp": 1789505114,
+  "scan_end": 64015258,
+  "scan_end_timestamp": 1789512058,
+  "scan_window_seconds": 6944,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 63916140,
-        "end": 63916639
-      },
-      {
-        "start": 63919140,
-        "end": 63919639
-      },
-      {
-        "start": 63920782,
-        "end": 63921781
-      },
-      {
-        "start": 63922782,
-        "end": 63923281
-      },
-      {
-        "start": 63924782,
-        "end": 63925281
-      },
-      {
-        "start": 63925782,
-        "end": 63926281
-      },
-      {
-        "start": 63926782,
-        "end": 63927281
-      },
-      {
-        "start": 63927782,
-        "end": 63928281
-      },
-      {
-        "start": 63928782,
-        "end": 63929281
-      },
-      {
-        "start": 63929782,
-        "end": 63930281
-      },
-      {
-        "start": 63930782,
-        "end": 63931281
-      },
-      {
-        "start": 63931782,
-        "end": 63932281
-      },
-      {
-        "start": 63932782,
-        "end": 63933281
-      },
-      {
-        "start": 63933987,
-        "end": 63999869
-      }
-    ],
-    "factory": [
-      {
-        "start": 63912140,
-        "end": 63912639
-      },
-      {
-        "start": 63933987,
-        "end": 63999869
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 63933987,
-        "end": 63999869
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 63921282,
@@ -102,55 +26,177 @@
         "end": 63925281
       },
       {
-        "start": 63975987,
-        "end": 63976486
-      },
-      {
-        "start": 63993987,
-        "end": 63994486
-      },
-      {
-        "start": 63994987,
-        "end": 63995486
+        "start": 63946994,
+        "end": 64015258
       }
     ],
     "factory": [
       {
         "start": 63936987,
         "end": 63937986
+      },
+      {
+        "start": 63946994,
+        "end": 64015258
+      }
+    ],
+    "uniswap_v4_initialize": [
+      {
+        "start": 63946994,
+        "end": 64015258
       }
     ]
   },
-  "zero_mint_logs": 130403,
-  "erc20_zero_mint_logs": 91611,
-  "factory_logs": 7981,
-  "factory_corroborated_token_mints": 11562,
-  "uniswap_v4_initialize_logs": 925,
-  "events_seen": 139309,
-  "unique_contracts_this_run": 4035,
-  "unique_candidates_this_run": 4035,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63947994,
+        "end": 63949993
+      },
+      {
+        "start": 63950494,
+        "end": 63951993
+      },
+      {
+        "start": 63955494,
+        "end": 63955993
+      },
+      {
+        "start": 63956494,
+        "end": 63956993
+      },
+      {
+        "start": 63957494,
+        "end": 63958493
+      },
+      {
+        "start": 63958994,
+        "end": 63959493
+      },
+      {
+        "start": 63959994,
+        "end": 63960493
+      },
+      {
+        "start": 63960994,
+        "end": 63961493
+      },
+      {
+        "start": 63961994,
+        "end": 63962493
+      },
+      {
+        "start": 63962994,
+        "end": 63963493
+      },
+      {
+        "start": 63964494,
+        "end": 63964993
+      },
+      {
+        "start": 63968994,
+        "end": 63969493
+      },
+      {
+        "start": 63969994,
+        "end": 63970493
+      },
+      {
+        "start": 63970994,
+        "end": 63971493
+      },
+      {
+        "start": 63971994,
+        "end": 63972493
+      },
+      {
+        "start": 63972994,
+        "end": 63973493
+      },
+      {
+        "start": 63973994,
+        "end": 63974493
+      },
+      {
+        "start": 63974994,
+        "end": 63975493
+      },
+      {
+        "start": 63975994,
+        "end": 63976493
+      },
+      {
+        "start": 63977494,
+        "end": 63977993
+      },
+      {
+        "start": 63978994,
+        "end": 63979493
+      },
+      {
+        "start": 63986994,
+        "end": 63987493
+      },
+      {
+        "start": 63987994,
+        "end": 63988493
+      },
+      {
+        "start": 63991494,
+        "end": 63991993
+      },
+      {
+        "start": 63992994,
+        "end": 63993493
+      },
+      {
+        "start": 64000994,
+        "end": 64001493
+      },
+      {
+        "start": 64001994,
+        "end": 64002493
+      },
+      {
+        "start": 64003994,
+        "end": 64004493
+      },
+      {
+        "start": 64004994,
+        "end": 64005493
+      }
+    ]
+  },
+  "zero_mint_logs": 89933,
+  "erc20_zero_mint_logs": 59709,
+  "factory_logs": 7425,
+  "factory_corroborated_token_mints": 7661,
+  "uniswap_v4_initialize_logs": 867,
+  "events_seen": 98225,
+  "unique_contracts_this_run": 2800,
+  "unique_candidates_this_run": 2800,
   "candidate_source_counts": {
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 23,
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 16,
     "factory_mint:0x16cf6788b762ee8969744586ed16fc5705140dd7": 1,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 255,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 2183,
-    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 3,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 1259,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 230,
-    "uniswap_v4_initialize": 725,
-    "zero_address_mint": 3916
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 173,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 1494,
+    "factory_mint:0xd4ccbfa37e2f35611b3042e4096ad7a3459bd007": 2,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 857,
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 141,
+    "uniswap_v4_initialize": 679,
+    "zero_address_mint": 2533
   },
   "classification_counts": {
-    "NEW_LAUNCH": 3916,
-    "NEW_MARKET": 119
+    "NEW_LAUNCH": 2533,
+    "NEW_MARKET": 267
   },
-  "new_contracts_added": 941,
-  "new_candidates": 941,
-  "existing_contracts_updated": 336,
-  "stored_candidates": 83842,
-  "total_persisted_contracts": 83842,
+  "new_contracts_added": 446,
+  "new_candidates": 446,
+  "existing_contracts_updated": 110,
+  "stored_candidates": 84288,
+  "total_persisted_contracts": 84288,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 251.38,
-  "updated_at_unix": 1789510767,
+  "runtime_seconds": 167.57,
+  "updated_at_unix": 1789512226,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

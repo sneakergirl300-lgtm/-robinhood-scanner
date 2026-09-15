@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generated_at": 1789498399,
+  "generated_at": 1789498982,
   "state": "NEEDS_MODEL_REVIEW",
   "pipeline": "DISCOVERY -> FAST_OBSERVATION -> ENRICHMENT -> STRUCTURAL_GATE -> MODEL_REVIEW",
   "input": {
-    "latest_analysis_generated_at": 1789498397,
+    "latest_analysis_generated_at": 1789498981,
     "analysis_stop_reason": "HEAD_UNRESOLVED: HTTP_403",
     "analysis_coverage": "PARTIAL",
     "candidate_count": 8
@@ -19,23 +19,22 @@
   "enrichment_errors": [],
   "candidates": [
     {
-      "contract": "0xd5b6b1bbbfac8004248b623cd7ec13a867ce76f4",
+      "contract": "0x15104d176ef5b7ad70ea23b35c96cd2e4a6a2b74",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 322,
-        "discovered_at": 1789498077,
+        "age_seconds": 68929,
+        "discovered_at": 1789430053,
         "classification": "NEW_LAUNCH",
         "sources": [
-          "uniswap_v4_initialize",
           "zero_address_mint"
         ],
-        "first_seen_block": 63859723,
-        "last_seen_block": 63877103
+        "first_seen_block": 63205385,
+        "last_seen_block": 63885128
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
-        "lane": "NEW",
+        "lane": "FOLLOWUP",
         "last_attempt": 0,
         "executed_price": null,
         "valuation_conflict": false,
@@ -46,125 +45,16 @@
       },
       "enrichment": {
         "dexscreener": {
-          "status": "AVAILABLE",
+          "status": "NO_EXACT_BASE_PAIR",
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
-            "confidence": "THIRD_PARTY_AGGREGATE",
-            "identity_match": "exact_base_token_and_chain"
+            "observed_at": 1789498982,
+            "confidence": "MISSING"
           },
-          "chain_id": "robinhood",
-          "dex_id": "uniswap",
-          "primary_pair": "0x94dd2e094ce61883bd29d618a5a3c70346fa65d59271acd574d3d28995b0f5ee",
-          "pair_url": "https://dexscreener.com/robinhood/0x94dd2e094ce61883bd29d618a5a3c70346fa65d59271acd574d3d28995b0f5ee",
-          "exact_base_pair_count": 1,
+          "exact_base_pair_count": 0,
           "exact_quote_pair_count": 0,
-          "pair_created_at": 1789496133,
-          "pair_age_seconds": 2266,
-          "fresh_market_cap": {
-            "value": 5623,
-            "confidence": "MEDIUM",
-            "basis": "marketCap"
-          },
-          "fdv_usd": {
-            "value": 5623,
-            "confidence": "MEDIUM",
-            "basis": "DexScreener fdv"
-          },
-          "price_trajectory": {
-            "price_usd": {
-              "value": "0.000005796",
-              "confidence": "MEDIUM",
-              "basis": "primary exact-base pair"
-            },
-            "change_percent": {
-              "m5": null,
-              "h1": -88.44,
-              "h6": -88.44,
-              "h24": -88.44
-            },
-            "previous_price_usd": null
-          },
-          "liquidity": {
-            "primary_pair_usd": {
-              "value": 6916.12,
-              "confidence": "MEDIUM",
-              "basis": "primary pair"
-            },
-            "all_exact_base_pairs_usd": {
-              "value": 6916.12,
-              "confidence": "MEDIUM",
-              "basis": "sum of exact-base pairs"
-            },
-            "change_since_previous_run_usd": null
-          },
-          "buyers_sellers": {
-            "buys": {
-              "m5": 0,
-              "h1": 240,
-              "h6": 240,
-              "h24": 240
-            },
-            "sells": {
-              "m5": 0,
-              "h1": 337,
-              "h6": 337,
-              "h24": 337
-            },
-            "meaning": "aggregated swap counts; not unique or independent wallets"
-          },
-          "volume_flow": {
-            "volume_usd": {
-              "m5": 0,
-              "h1": 40961.87,
-              "h6": 40961.87,
-              "h24": 40961.87
-            },
-            "meaning": "aggregated indexed volume; not a quality decision by itself"
-          },
-          "social_profile": {
-            "websites": [],
-            "socials": [
-              {
-                "url": "https://x.com/morti",
-                "type": "twitter"
-              }
-            ],
-            "confidence": "SELF_REPORTED_PROFILE_ONLY"
-          },
-          "helper_context_signals": [],
-          "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
-          },
-          "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x94dd2e094ce61883bd29d618a5a3c70346fa65d59271acd574d3d28995b0f5ee",
-            "price_usd": "0.000005796",
-            "market_cap_usd": 5623,
-            "fdv_usd": 5623,
-            "liquidity_total_usd": 6916.12,
-            "volume": {
-              "m5": 0,
-              "h1": 40961.87,
-              "h6": 40961.87,
-              "h24": 40961.87
-            },
-            "buys": {
-              "m5": 0,
-              "h1": 240,
-              "h6": 240,
-              "h24": 240
-            },
-            "sells": {
-              "m5": 0,
-              "h1": 337,
-              "h6": 337,
-              "h24": 337
-            }
-          }
+          "snapshot": null
         },
         "fomo": {
           "status": "NOT_IMPLEMENTED",
@@ -198,6 +88,10 @@
         "creator_history",
         "creator_linkage",
         "creator_supply_control",
+        "dexscreener_flow",
+        "dexscreener_liquidity",
+        "dexscreener_market_cap",
+        "dexscreener_price",
         "fomo_attention",
         "holder_concentration",
         "holder_growth",
@@ -235,22 +129,22 @@
       }
     },
     {
-      "contract": "0x2952204d44f44af2621400abea1ccd07a0c31e18",
+      "contract": "0xbeeff033f34c046626b8d0a041844c5d1a5409dd",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 29,
-        "discovered_at": 1789498370,
-        "classification": "NEW_MARKET",
+        "age_seconds": 144337,
+        "discovered_at": 1789354645,
+        "classification": "NEW_LAUNCH",
         "sources": [
-          "uniswap_v4_initialize"
+          "zero_address_mint"
         ],
-        "first_seen_block": 63876665,
-        "last_seen_block": 63877083
+        "first_seen_block": 62455445,
+        "last_seen_block": 63885118
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
-        "lane": "NEW",
+        "lane": "FOLLOWUP",
         "last_attempt": 0,
         "executed_price": null,
         "valuation_conflict": false,
@@ -261,122 +155,16 @@
       },
       "enrichment": {
         "dexscreener": {
-          "status": "AVAILABLE",
+          "status": "NO_EXACT_BASE_PAIR",
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
-            "confidence": "THIRD_PARTY_AGGREGATE",
-            "identity_match": "exact_base_token_and_chain"
+            "observed_at": 1789498982,
+            "confidence": "MISSING"
           },
-          "chain_id": "robinhood",
-          "dex_id": "uniswap",
-          "primary_pair": "0x3502b975c9dd2539d6a30253c2f284667565b6ceb316b312f91c84b9c61c1b6b",
-          "pair_url": "https://dexscreener.com/robinhood/0x3502b975c9dd2539d6a30253c2f284667565b6ceb316b312f91c84b9c61c1b6b",
-          "exact_base_pair_count": 1,
+          "exact_base_pair_count": 0,
           "exact_quote_pair_count": 0,
-          "pair_created_at": 1789497842,
-          "pair_age_seconds": 557,
-          "fresh_market_cap": {
-            "value": 20179,
-            "confidence": "MEDIUM",
-            "basis": "marketCap"
-          },
-          "fdv_usd": {
-            "value": 20179,
-            "confidence": "MEDIUM",
-            "basis": "DexScreener fdv"
-          },
-          "price_trajectory": {
-            "price_usd": {
-              "value": "0.00002017",
-              "confidence": "MEDIUM",
-              "basis": "primary exact-base pair"
-            },
-            "change_percent": {
-              "m5": -1.84,
-              "h1": 0.59,
-              "h6": 0.59,
-              "h24": 0.59
-            },
-            "previous_price_usd": null
-          },
-          "liquidity": {
-            "primary_pair_usd": {
-              "value": 20282.94,
-              "confidence": "MEDIUM",
-              "basis": "primary pair"
-            },
-            "all_exact_base_pairs_usd": {
-              "value": 20282.94,
-              "confidence": "MEDIUM",
-              "basis": "sum of exact-base pairs"
-            },
-            "change_since_previous_run_usd": null
-          },
-          "buyers_sellers": {
-            "buys": {
-              "m5": 2,
-              "h1": 171,
-              "h6": 171,
-              "h24": 171
-            },
-            "sells": {
-              "m5": 1,
-              "h1": 189,
-              "h6": 189,
-              "h24": 189
-            },
-            "meaning": "aggregated swap counts; not unique or independent wallets"
-          },
-          "volume_flow": {
-            "volume_usd": {
-              "m5": 188.51,
-              "h1": 15643.28,
-              "h6": 15643.28,
-              "h24": 15643.28
-            },
-            "meaning": "aggregated indexed volume; not a quality decision by itself"
-          },
-          "social_profile": {
-            "websites": [],
-            "socials": [],
-            "confidence": "SELF_REPORTED_PROFILE_ONLY"
-          },
-          "helper_context_signals": [
-            "m5_buys_exceed_sells"
-          ],
-          "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
-          },
-          "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x3502b975c9dd2539d6a30253c2f284667565b6ceb316b312f91c84b9c61c1b6b",
-            "price_usd": "0.00002017",
-            "market_cap_usd": 20179,
-            "fdv_usd": 20179,
-            "liquidity_total_usd": 20282.94,
-            "volume": {
-              "m5": 188.51,
-              "h1": 15643.28,
-              "h6": 15643.28,
-              "h24": 15643.28
-            },
-            "buys": {
-              "m5": 2,
-              "h1": 171,
-              "h6": 171,
-              "h24": 171
-            },
-            "sells": {
-              "m5": 1,
-              "h1": 189,
-              "h6": 189,
-              "h24": 189
-            }
-          }
+          "snapshot": null
         },
         "fomo": {
           "status": "NOT_IMPLEMENTED",
@@ -410,6 +198,10 @@
         "creator_history",
         "creator_linkage",
         "creator_supply_control",
+        "dexscreener_flow",
+        "dexscreener_liquidity",
+        "dexscreener_market_cap",
+        "dexscreener_price",
         "fomo_attention",
         "holder_concentration",
         "holder_growth",
@@ -447,18 +239,18 @@
       }
     },
     {
-      "contract": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "contract": "0x45a45c988adb02a04f8d1cbf8baca64fa9bc42a6",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 143733,
-        "discovered_at": 1789354666,
-        "classification": "NEW_MARKET",
+        "age_seconds": 114189,
+        "discovered_at": 1789384793,
+        "classification": "NEW_LAUNCH",
         "sources": [
-          "uniswap_v4_initialize"
+          "zero_address_mint"
         ],
-        "first_seen_block": 62456829,
-        "last_seen_block": 63876978
+        "first_seen_block": 62761506,
+        "last_seen_block": 63885082
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
@@ -477,50 +269,50 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
+            "observed_at": 1789498982,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
           "chain_id": "robinhood",
           "dex_id": "uniswap",
-          "primary_pair": "0x7aebd80541bfaaf23dbb6e99ce13d4d31c1a84c91414f971eadbff7db5f85995",
-          "pair_url": "https://dexscreener.com/robinhood/0x7aebd80541bfaaf23dbb6e99ce13d4d31c1a84c91414f971eadbff7db5f85995",
+          "primary_pair": "0x7907e190156c2c6b6e94f7a2969c42631dc0476a031ba67fb1e95d4403ce5e4d",
+          "pair_url": "https://dexscreener.com/robinhood/0x7907e190156c2c6b6e94f7a2969c42631dc0476a031ba67fb1e95d4403ce5e4d",
           "exact_base_pair_count": 1,
-          "exact_quote_pair_count": 1,
-          "pair_created_at": 1788444274,
-          "pair_age_seconds": 1054125,
+          "exact_quote_pair_count": 0,
+          "pair_created_at": 1787787964,
+          "pair_age_seconds": 1711018,
           "fresh_market_cap": {
-            "value": 289027524,
+            "value": 15911,
             "confidence": "MEDIUM",
             "basis": "marketCap"
           },
           "fdv_usd": {
-            "value": 289027524,
+            "value": 15911,
             "confidence": "MEDIUM",
             "basis": "DexScreener fdv"
           },
           "price_trajectory": {
             "price_usd": {
-              "value": "0.2921",
+              "value": "72.73",
               "confidence": "MEDIUM",
               "basis": "primary exact-base pair"
             },
             "change_percent": {
-              "m5": -0.65,
-              "h1": -2.28,
-              "h6": -8,
-              "h24": -1.87
+              "m5": -3.62,
+              "h1": -1.07,
+              "h6": -13.77,
+              "h24": -9.89
             },
             "previous_price_usd": null
           },
           "liquidity": {
             "primary_pair_usd": {
-              "value": 752845.89,
+              "value": 14201.03,
               "confidence": "MEDIUM",
               "basis": "primary pair"
             },
             "all_exact_base_pairs_usd": {
-              "value": 752845.89,
+              "value": 14201.03,
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
@@ -528,45 +320,34 @@
           },
           "buyers_sellers": {
             "buys": {
-              "m5": 20,
-              "h1": 162,
-              "h6": 1558,
-              "h24": 6042
+              "m5": 0,
+              "h1": 1,
+              "h6": 1,
+              "h24": 6
             },
             "sells": {
-              "m5": 14,
-              "h1": 213,
-              "h6": 1410,
-              "h24": 5029
+              "m5": 1,
+              "h1": 2,
+              "h6": 5,
+              "h24": 19
             },
             "meaning": "aggregated swap counts; not unique or independent wallets"
           },
           "volume_flow": {
             "volume_usd": {
-              "m5": 36249.24,
-              "h1": 265044.18,
-              "h6": 1796126.93,
-              "h24": 7760087.72
+              "m5": 13.46,
+              "h1": 37.24,
+              "h6": 230.9,
+              "h24": 4686.03
             },
             "meaning": "aggregated indexed volume; not a quality decision by itself"
           },
           "social_profile": {
-            "websites": [
-              {
-                "url": "https://artificialinu.com/",
-                "label": "Website"
-              }
-            ],
-            "socials": [
-              {
-                "url": "https://x.com/artificiallyinu",
-                "type": "twitter"
-              }
-            ],
+            "websites": [],
+            "socials": [],
             "confidence": "SELF_REPORTED_PROFILE_ONLY"
           },
           "helper_context_signals": [
-            "m5_buys_exceed_sells",
             "m5_volume_pace_above_h1_average"
           ],
           "changes_since_previous_run": {
@@ -575,29 +356,29 @@
             "buys_m5": null
           },
           "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x7aebd80541bfaaf23dbb6e99ce13d4d31c1a84c91414f971eadbff7db5f85995",
-            "price_usd": "0.2921",
-            "market_cap_usd": 289027524,
-            "fdv_usd": 289027524,
-            "liquidity_total_usd": 752845.89,
+            "observed_at": 1789498982,
+            "primary_pair": "0x7907e190156c2c6b6e94f7a2969c42631dc0476a031ba67fb1e95d4403ce5e4d",
+            "price_usd": "72.73",
+            "market_cap_usd": 15911,
+            "fdv_usd": 15911,
+            "liquidity_total_usd": 14201.03,
             "volume": {
-              "m5": 36249.24,
-              "h1": 265044.18,
-              "h6": 1796126.93,
-              "h24": 7760087.72
+              "m5": 13.46,
+              "h1": 37.24,
+              "h6": 230.9,
+              "h24": 4686.03
             },
             "buys": {
-              "m5": 20,
-              "h1": 162,
-              "h6": 1558,
-              "h24": 6042
+              "m5": 0,
+              "h1": 1,
+              "h6": 1,
+              "h24": 6
             },
             "sells": {
-              "m5": 14,
-              "h1": 213,
-              "h6": 1410,
-              "h24": 5029
+              "m5": 1,
+              "h1": 2,
+              "h6": 5,
+              "h24": 19
             }
           }
         },
@@ -670,18 +451,20 @@
       }
     },
     {
-      "contract": "0xb71c2f7968dd371e66b3104964e143ca49cb1e18",
+      "contract": "0x5a135fdb27fe5a601bf3f9500552db4ce252986b",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 29,
-        "discovered_at": 1789498370,
-        "classification": "NEW_MARKET",
+        "age_seconds": 161,
+        "discovered_at": 1789498821,
+        "classification": "NEW_LAUNCH",
         "sources": [
-          "uniswap_v4_initialize"
+          "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+          "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+          "zero_address_mint"
         ],
-        "first_seen_block": 63876978,
-        "last_seen_block": 63876978
+        "first_seen_block": 63885078,
+        "last_seen_block": 63885078
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
@@ -696,120 +479,16 @@
       },
       "enrichment": {
         "dexscreener": {
-          "status": "AVAILABLE",
+          "status": "NO_EXACT_BASE_PAIR",
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
-            "confidence": "THIRD_PARTY_AGGREGATE",
-            "identity_match": "exact_base_token_and_chain"
+            "observed_at": 1789498982,
+            "confidence": "MISSING"
           },
-          "chain_id": "robinhood",
-          "dex_id": "uniswap",
-          "primary_pair": "0x91f4eb1fa04f2f00319601825d6ba03de46e572a1cd59efe3549e323ca4d7a77",
-          "pair_url": "https://dexscreener.com/robinhood/0x91f4eb1fa04f2f00319601825d6ba03de46e572a1cd59efe3549e323ca4d7a77",
-          "exact_base_pair_count": 1,
+          "exact_base_pair_count": 0,
           "exact_quote_pair_count": 0,
-          "pair_created_at": 1789497876,
-          "pair_age_seconds": 523,
-          "fresh_market_cap": {
-            "value": 19740,
-            "confidence": "MEDIUM",
-            "basis": "marketCap"
-          },
-          "fdv_usd": {
-            "value": 19740,
-            "confidence": "MEDIUM",
-            "basis": "DexScreener fdv"
-          },
-          "price_trajectory": {
-            "price_usd": {
-              "value": "0.00001974",
-              "confidence": "MEDIUM",
-              "basis": "primary exact-base pair"
-            },
-            "change_percent": {
-              "m5": -1.85,
-              "h1": -3.2,
-              "h6": -3.2,
-              "h24": -3.2
-            },
-            "previous_price_usd": null
-          },
-          "liquidity": {
-            "primary_pair_usd": {
-              "value": 19740.2,
-              "confidence": "MEDIUM",
-              "basis": "primary pair"
-            },
-            "all_exact_base_pairs_usd": {
-              "value": 19740.2,
-              "confidence": "MEDIUM",
-              "basis": "sum of exact-base pairs"
-            },
-            "change_since_previous_run_usd": null
-          },
-          "buyers_sellers": {
-            "buys": {
-              "m5": 0,
-              "h1": 17,
-              "h6": 17,
-              "h24": 17
-            },
-            "sells": {
-              "m5": 1,
-              "h1": 28,
-              "h6": 28,
-              "h24": 28
-            },
-            "meaning": "aggregated swap counts; not unique or independent wallets"
-          },
-          "volume_flow": {
-            "volume_usd": {
-              "m5": 8.87,
-              "h1": 4235.01,
-              "h6": 4235.01,
-              "h24": 4235.01
-            },
-            "meaning": "aggregated indexed volume; not a quality decision by itself"
-          },
-          "social_profile": {
-            "websites": [],
-            "socials": [],
-            "confidence": "SELF_REPORTED_PROFILE_ONLY"
-          },
-          "helper_context_signals": [],
-          "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
-          },
-          "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x91f4eb1fa04f2f00319601825d6ba03de46e572a1cd59efe3549e323ca4d7a77",
-            "price_usd": "0.00001974",
-            "market_cap_usd": 19740,
-            "fdv_usd": 19740,
-            "liquidity_total_usd": 19740.2,
-            "volume": {
-              "m5": 8.87,
-              "h1": 4235.01,
-              "h6": 4235.01,
-              "h24": 4235.01
-            },
-            "buys": {
-              "m5": 0,
-              "h1": 17,
-              "h6": 17,
-              "h24": 17
-            },
-            "sells": {
-              "m5": 1,
-              "h1": 28,
-              "h6": 28,
-              "h24": 28
-            }
-          }
+          "snapshot": null
         },
         "fomo": {
           "status": "NOT_IMPLEMENTED",
@@ -843,6 +522,10 @@
         "creator_history",
         "creator_linkage",
         "creator_supply_control",
+        "dexscreener_flow",
+        "dexscreener_liquidity",
+        "dexscreener_market_cap",
+        "dexscreener_price",
         "fomo_attention",
         "holder_concentration",
         "holder_growth",
@@ -880,232 +563,19 @@
       }
     },
     {
-      "contract": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+      "contract": "0x81b76c6b1be427c404fbea74acf13d3fd709818b",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 140123,
-        "discovered_at": 1789358276,
+        "age_seconds": 161,
+        "discovered_at": 1789498821,
         "classification": "NEW_LAUNCH",
         "sources": [
           "uniswap_v4_initialize",
           "zero_address_mint"
         ],
-        "first_seen_block": 62486414,
-        "last_seen_block": 63876970
-      },
-      "raw_chain_evidence": {
-        "source": "analyzer.py bounded exact-contract observations",
-        "lane": "FOLLOWUP",
-        "last_attempt": 0,
-        "executed_price": null,
-        "valuation_conflict": false,
-        "valuation_sources": [],
-        "recent_observations": [],
-        "streams": {},
-        "last_error": null
-      },
-      "enrichment": {
-        "dexscreener": {
-          "status": "AVAILABLE",
-          "source": {
-            "name": "DexScreener",
-            "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
-            "confidence": "THIRD_PARTY_AGGREGATE",
-            "identity_match": "exact_base_token_and_chain"
-          },
-          "chain_id": "robinhood",
-          "dex_id": "uniswap",
-          "primary_pair": "0xf4ACdAEEB7022862A763C9B1B885e11191c889E3",
-          "pair_url": "https://dexscreener.com/robinhood/0xf4acdaeeb7022862a763c9b1b885e11191c889e3",
-          "exact_base_pair_count": 1,
-          "exact_quote_pair_count": 1,
-          "pair_created_at": 1783548377,
-          "pair_age_seconds": 5950022,
-          "fresh_market_cap": {
-            "value": 4936096,
-            "confidence": "MEDIUM",
-            "basis": "marketCap"
-          },
-          "fdv_usd": {
-            "value": 4936096,
-            "confidence": "MEDIUM",
-            "basis": "DexScreener fdv"
-          },
-          "price_trajectory": {
-            "price_usd": {
-              "value": "356.71",
-              "confidence": "MEDIUM",
-              "basis": "primary exact-base pair"
-            },
-            "change_percent": {
-              "m5": -0.09,
-              "h1": -0.04,
-              "h6": -0.52,
-              "h24": -1.43
-            },
-            "previous_price_usd": null
-          },
-          "liquidity": {
-            "primary_pair_usd": {
-              "value": 1134905.83,
-              "confidence": "MEDIUM",
-              "basis": "primary pair"
-            },
-            "all_exact_base_pairs_usd": {
-              "value": 1134905.83,
-              "confidence": "MEDIUM",
-              "basis": "sum of exact-base pairs"
-            },
-            "change_since_previous_run_usd": null
-          },
-          "buyers_sellers": {
-            "buys": {
-              "m5": 9,
-              "h1": 59,
-              "h6": 421,
-              "h24": 1544
-            },
-            "sells": {
-              "m5": 8,
-              "h1": 55,
-              "h6": 497,
-              "h24": 2034
-            },
-            "meaning": "aggregated swap counts; not unique or independent wallets"
-          },
-          "volume_flow": {
-            "volume_usd": {
-              "m5": 12984.7,
-              "h1": 77457.64,
-              "h6": 707642.97,
-              "h24": 1161624.88
-            },
-            "meaning": "aggregated indexed volume; not a quality decision by itself"
-          },
-          "social_profile": {
-            "websites": [],
-            "socials": [],
-            "confidence": "SELF_REPORTED_PROFILE_ONLY"
-          },
-          "helper_context_signals": [
-            "m5_buys_exceed_sells",
-            "m5_volume_pace_above_h1_average"
-          ],
-          "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
-          },
-          "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0xf4ACdAEEB7022862A763C9B1B885e11191c889E3",
-            "price_usd": "356.71",
-            "market_cap_usd": 4936096,
-            "fdv_usd": 4936096,
-            "liquidity_total_usd": 1134905.83,
-            "volume": {
-              "m5": 12984.7,
-              "h1": 77457.64,
-              "h6": 707642.97,
-              "h24": 1161624.88
-            },
-            "buys": {
-              "m5": 9,
-              "h1": 59,
-              "h6": 421,
-              "h24": 1544
-            },
-            "sells": {
-              "m5": 8,
-              "h1": 55,
-              "h6": 497,
-              "h24": 2034
-            }
-          }
-        },
-        "fomo": {
-          "status": "NOT_IMPLEMENTED",
-          "evidence": null
-        },
-        "public_scam_trackers": {
-          "status": "NOT_IMPLEMENTED",
-          "evidence": null
-        }
-      },
-      "holder_growth": {
-        "value": null,
-        "confidence": "MISSING"
-      },
-      "concentration_creator_risk": {
-        "structural_status": "UNRESOLVED",
-        "source": null,
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "scam_flags": [],
-      "unresolved_checks": [
-        "creator_history",
-        "creator_linkage",
-        "creator_supply_control",
-        "fomo_attention",
-        "holder_concentration",
-        "holder_growth",
-        "independent_repeat_buyers",
-        "independent_social_attention",
-        "linked_ownership",
-        "liquidity_control",
-        "liquidity_lock_or_removal_control",
-        "mint_admin_permissions",
-        "sellability_and_tax",
-        "sellability_tax"
-      ],
-      "model_review": {
-        "required": true,
-        "state": "NEEDS_MODEL_REVIEW",
-        "allowed_decisions": [
-          "REJECT",
-          "EMERGING",
-          "SCOUT",
-          "CONFIRMED",
-          "COLD / NO ACTION"
-        ],
-        "hard_rule": "REJECT must be returned when structural status is REJECT; UNRESOLVED is never clean.",
-        "judgment_focus": [
-          "buyer acceleration",
-          "independent or repeat buyers when known",
-          "holder growth",
-          "liquidity growth and retention",
-          "improving distribution",
-          "buy-flow quality",
-          "participation growth versus valuation",
-          "consecutive strengthening observations"
-        ],
-        "anti_signal": "Raw volume or transaction count must not dominate judgment."
-      }
-    },
-    {
-      "contract": "0xfb72b62f24ad733f6d0e7400dd6d873ceeaf1e18",
-      "review_state": "NEEDS_MODEL_REVIEW",
-      "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
-      "discovery": {
-        "age_seconds": 29,
-        "discovered_at": 1789498370,
-        "classification": "NEW_MARKET",
-        "sources": [
-          "uniswap_v4_initialize"
-        ],
-        "first_seen_block": 63876970,
-        "last_seen_block": 63876970
+        "first_seen_block": 63885070,
+        "last_seen_block": 63885070
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
@@ -1124,50 +594,50 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
+            "observed_at": 1789498982,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
           "chain_id": "robinhood",
           "dex_id": "uniswap",
-          "primary_pair": "0x7967f6cc2b2f21583d81f7151b59ae5b5ea7b8e0deb0bbb6582b91675ab72453",
-          "pair_url": "https://dexscreener.com/robinhood/0x7967f6cc2b2f21583d81f7151b59ae5b5ea7b8e0deb0bbb6582b91675ab72453",
+          "primary_pair": "0x384ab702933c0ca7e4a67cd1ab2ed0f8c83cf19d846ecaaad1605d694b736dc7",
+          "pair_url": "https://dexscreener.com/robinhood/0x384ab702933c0ca7e4a67cd1ab2ed0f8c83cf19d846ecaaad1605d694b736dc7",
           "exact_base_pair_count": 1,
           "exact_quote_pair_count": 0,
-          "pair_created_at": 1789497875,
-          "pair_age_seconds": 524,
+          "pair_created_at": 1789498740,
+          "pair_age_seconds": 242,
           "fresh_market_cap": {
-            "value": 20314,
+            "value": 3732,
             "confidence": "MEDIUM",
             "basis": "marketCap"
           },
           "fdv_usd": {
-            "value": 20314,
+            "value": 3732,
             "confidence": "MEDIUM",
             "basis": "DexScreener fdv"
           },
           "price_trajectory": {
             "price_usd": {
-              "value": "0.00002031",
+              "value": "0.000003732",
               "confidence": "MEDIUM",
               "basis": "primary exact-base pair"
             },
             "change_percent": {
-              "m5": null,
-              "h1": -0.06,
-              "h6": -0.06,
-              "h24": -0.06
+              "m5": 3.56,
+              "h1": 3.56,
+              "h6": 3.56,
+              "h24": 3.56
             },
             "previous_price_usd": null
           },
           "liquidity": {
             "primary_pair_usd": {
-              "value": 20560.14,
+              "value": 3730.82,
               "confidence": "MEDIUM",
               "basis": "primary pair"
             },
             "all_exact_base_pairs_usd": {
-              "value": 20560.14,
+              "value": 3730.82,
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
@@ -1175,220 +645,10 @@
           },
           "buyers_sellers": {
             "buys": {
-              "m5": 0,
-              "h1": 25,
-              "h6": 25,
-              "h24": 25
-            },
-            "sells": {
-              "m5": 0,
+              "m5": 29,
               "h1": 29,
               "h6": 29,
               "h24": 29
-            },
-            "meaning": "aggregated swap counts; not unique or independent wallets"
-          },
-          "volume_flow": {
-            "volume_usd": {
-              "m5": 0,
-              "h1": 4561.02,
-              "h6": 4561.02,
-              "h24": 4561.02
-            },
-            "meaning": "aggregated indexed volume; not a quality decision by itself"
-          },
-          "social_profile": {
-            "websites": [],
-            "socials": [],
-            "confidence": "SELF_REPORTED_PROFILE_ONLY"
-          },
-          "helper_context_signals": [],
-          "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
-          },
-          "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x7967f6cc2b2f21583d81f7151b59ae5b5ea7b8e0deb0bbb6582b91675ab72453",
-            "price_usd": "0.00002031",
-            "market_cap_usd": 20314,
-            "fdv_usd": 20314,
-            "liquidity_total_usd": 20560.14,
-            "volume": {
-              "m5": 0,
-              "h1": 4561.02,
-              "h6": 4561.02,
-              "h24": 4561.02
-            },
-            "buys": {
-              "m5": 0,
-              "h1": 25,
-              "h6": 25,
-              "h24": 25
-            },
-            "sells": {
-              "m5": 0,
-              "h1": 29,
-              "h6": 29,
-              "h24": 29
-            }
-          }
-        },
-        "fomo": {
-          "status": "NOT_IMPLEMENTED",
-          "evidence": null
-        },
-        "public_scam_trackers": {
-          "status": "NOT_IMPLEMENTED",
-          "evidence": null
-        }
-      },
-      "holder_growth": {
-        "value": null,
-        "confidence": "MISSING"
-      },
-      "concentration_creator_risk": {
-        "structural_status": "UNRESOLVED",
-        "source": null,
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "scam_flags": [],
-      "unresolved_checks": [
-        "creator_history",
-        "creator_linkage",
-        "creator_supply_control",
-        "fomo_attention",
-        "holder_concentration",
-        "holder_growth",
-        "independent_repeat_buyers",
-        "independent_social_attention",
-        "linked_ownership",
-        "liquidity_control",
-        "liquidity_lock_or_removal_control",
-        "mint_admin_permissions",
-        "sellability_and_tax",
-        "sellability_tax"
-      ],
-      "model_review": {
-        "required": true,
-        "state": "NEEDS_MODEL_REVIEW",
-        "allowed_decisions": [
-          "REJECT",
-          "EMERGING",
-          "SCOUT",
-          "CONFIRMED",
-          "COLD / NO ACTION"
-        ],
-        "hard_rule": "REJECT must be returned when structural status is REJECT; UNRESOLVED is never clean.",
-        "judgment_focus": [
-          "buyer acceleration",
-          "independent or repeat buyers when known",
-          "holder growth",
-          "liquidity growth and retention",
-          "improving distribution",
-          "buy-flow quality",
-          "participation growth versus valuation",
-          "consecutive strengthening observations"
-        ],
-        "anti_signal": "Raw volume or transaction count must not dominate judgment."
-      }
-    },
-    {
-      "contract": "0x735c92fe366df36dd3fc53c248ecb2aa616c1aac",
-      "review_state": "NEEDS_MODEL_REVIEW",
-      "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
-      "discovery": {
-        "age_seconds": 29,
-        "discovered_at": 1789498370,
-        "classification": "NEW_MARKET",
-        "sources": [
-          "uniswap_v4_initialize"
-        ],
-        "first_seen_block": 63876940,
-        "last_seen_block": 63876940
-      },
-      "raw_chain_evidence": {
-        "source": "analyzer.py bounded exact-contract observations",
-        "lane": "NEW",
-        "last_attempt": 0,
-        "executed_price": null,
-        "valuation_conflict": false,
-        "valuation_sources": [],
-        "recent_observations": [],
-        "streams": {},
-        "last_error": null
-      },
-      "enrichment": {
-        "dexscreener": {
-          "status": "AVAILABLE",
-          "source": {
-            "name": "DexScreener",
-            "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
-            "confidence": "THIRD_PARTY_AGGREGATE",
-            "identity_match": "exact_base_token_and_chain"
-          },
-          "chain_id": "robinhood",
-          "dex_id": "uniswap",
-          "primary_pair": "0x6c4636ba7a2498821d5d2ee93f90287ab45afdc9d500d757848bcf36fbb9e54b",
-          "pair_url": "https://dexscreener.com/robinhood/0x6c4636ba7a2498821d5d2ee93f90287ab45afdc9d500d757848bcf36fbb9e54b",
-          "exact_base_pair_count": 1,
-          "exact_quote_pair_count": 0,
-          "pair_created_at": 1789497872,
-          "pair_age_seconds": 527,
-          "fresh_market_cap": {
-            "value": 9634,
-            "confidence": "MEDIUM",
-            "basis": "marketCap"
-          },
-          "fdv_usd": {
-            "value": 9634,
-            "confidence": "MEDIUM",
-            "basis": "DexScreener fdv"
-          },
-          "price_trajectory": {
-            "price_usd": {
-              "value": "0.0000009633",
-              "confidence": "MEDIUM",
-              "basis": "primary exact-base pair"
-            },
-            "change_percent": {
-              "m5": null,
-              "h1": 0.01,
-              "h6": 0.01,
-              "h24": 0.01
-            },
-            "previous_price_usd": null
-          },
-          "liquidity": {
-            "primary_pair_usd": {
-              "value": 9633.51,
-              "confidence": "MEDIUM",
-              "basis": "primary pair"
-            },
-            "all_exact_base_pairs_usd": {
-              "value": 9633.51,
-              "confidence": "MEDIUM",
-              "basis": "sum of exact-base pairs"
-            },
-            "change_since_previous_run_usd": null
-          },
-          "buyers_sellers": {
-            "buys": {
-              "m5": 0,
-              "h1": 3,
-              "h6": 3,
-              "h24": 3
             },
             "sells": {
               "m5": 0,
@@ -1400,10 +660,10 @@
           },
           "volume_flow": {
             "volume_usd": {
-              "m5": 0,
-              "h1": 3.12,
-              "h6": 3.12,
-              "h24": 3.12
+              "m5": 65.83,
+              "h1": 65.83,
+              "h6": 65.83,
+              "h24": 65.83
             },
             "meaning": "aggregated indexed volume; not a quality decision by itself"
           },
@@ -1412,30 +672,33 @@
             "socials": [],
             "confidence": "SELF_REPORTED_PROFILE_ONLY"
           },
-          "helper_context_signals": [],
+          "helper_context_signals": [
+            "m5_buys_exceed_sells",
+            "m5_volume_pace_above_h1_average"
+          ],
           "changes_since_previous_run": {
             "liquidity_usd": null,
             "volume_m5": null,
             "buys_m5": null
           },
           "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x6c4636ba7a2498821d5d2ee93f90287ab45afdc9d500d757848bcf36fbb9e54b",
-            "price_usd": "0.0000009633",
-            "market_cap_usd": 9634,
-            "fdv_usd": 9634,
-            "liquidity_total_usd": 9633.51,
+            "observed_at": 1789498982,
+            "primary_pair": "0x384ab702933c0ca7e4a67cd1ab2ed0f8c83cf19d846ecaaad1605d694b736dc7",
+            "price_usd": "0.000003732",
+            "market_cap_usd": 3732,
+            "fdv_usd": 3732,
+            "liquidity_total_usd": 3730.82,
             "volume": {
-              "m5": 0,
-              "h1": 3.12,
-              "h6": 3.12,
-              "h24": 3.12
+              "m5": 65.83,
+              "h1": 65.83,
+              "h6": 65.83,
+              "h24": 65.83
             },
             "buys": {
-              "m5": 0,
-              "h1": 3,
-              "h6": 3,
-              "h24": 3
+              "m5": 29,
+              "h1": 29,
+              "h6": 29,
+              "h24": 29
             },
             "sells": {
               "m5": 0,
@@ -1514,22 +777,23 @@
       }
     },
     {
-      "contract": "0xb9b74e55dc879812ff796aae95c99975bc1aa2ae",
+      "contract": "0x2f4591f9304f844bc78dc439343c097ec080a8af",
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 29,
-        "discovered_at": 1789498370,
-        "classification": "NEW_MARKET",
+        "age_seconds": 161290,
+        "discovered_at": 1789337692,
+        "classification": "NEW_LAUNCH",
         "sources": [
-          "uniswap_v4_initialize"
+          "uniswap_v4_initialize",
+          "zero_address_mint"
         ],
-        "first_seen_block": 63876902,
-        "last_seen_block": 63876902
+        "first_seen_block": 62301855,
+        "last_seen_block": 63885065
       },
       "raw_chain_evidence": {
         "source": "analyzer.py bounded exact-contract observations",
-        "lane": "NEW",
+        "lane": "FOLLOWUP",
         "last_attempt": 0,
         "executed_price": null,
         "valuation_conflict": false,
@@ -1544,31 +808,31 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789498399,
+            "observed_at": 1789498982,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
           "chain_id": "robinhood",
           "dex_id": "uniswap",
-          "primary_pair": "0x9da6f3f22faa4d72cfc7498b5e117a6d36b4bcb8eb0d889e1b54ad663c83ccdf",
-          "pair_url": "https://dexscreener.com/robinhood/0x9da6f3f22faa4d72cfc7498b5e117a6d36b4bcb8eb0d889e1b54ad663c83ccdf",
+          "primary_pair": "0xedff6fc44b6d7f10b88b8f6529253ac96e757bf95a7bb66787618f8b307467ad",
+          "pair_url": "https://dexscreener.com/robinhood/0xedff6fc44b6d7f10b88b8f6529253ac96e757bf95a7bb66787618f8b307467ad",
           "exact_base_pair_count": 1,
           "exact_quote_pair_count": 0,
-          "pair_created_at": 1789497868,
-          "pair_age_seconds": 531,
+          "pair_created_at": 1788994205,
+          "pair_age_seconds": 504777,
           "fresh_market_cap": {
-            "value": 3610,
+            "value": 457238,
             "confidence": "MEDIUM",
             "basis": "marketCap"
           },
           "fdv_usd": {
-            "value": 3610,
+            "value": 457238,
             "confidence": "MEDIUM",
             "basis": "DexScreener fdv"
           },
           "price_trajectory": {
             "price_usd": {
-              "value": "0.000003610",
+              "value": "0.07986",
               "confidence": "MEDIUM",
               "basis": "primary exact-base pair"
             },
@@ -1576,18 +840,18 @@
               "m5": null,
               "h1": null,
               "h6": null,
-              "h24": null
+              "h24": -36.48
             },
             "previous_price_usd": null
           },
           "liquidity": {
             "primary_pair_usd": {
-              "value": 3610.23,
+              "value": 61.24,
               "confidence": "MEDIUM",
               "basis": "primary pair"
             },
             "all_exact_base_pairs_usd": {
-              "value": 3610.23,
+              "value": 61.24,
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
@@ -1596,24 +860,24 @@
           "buyers_sellers": {
             "buys": {
               "m5": 0,
-              "h1": 1,
-              "h6": 1,
-              "h24": 1
+              "h1": 0,
+              "h6": 0,
+              "h24": 3
             },
             "sells": {
               "m5": 0,
               "h1": 0,
               "h6": 0,
-              "h24": 0
+              "h24": 6
             },
             "meaning": "aggregated swap counts; not unique or independent wallets"
           },
           "volume_flow": {
             "volume_usd": {
               "m5": 0,
-              "h1": 2.27,
-              "h6": 2.27,
-              "h24": 2.27
+              "h1": 0,
+              "h6": 0,
+              "h24": 79.92
             },
             "meaning": "aggregated indexed volume; not a quality decision by itself"
           },
@@ -1629,29 +893,353 @@
             "buys_m5": null
           },
           "snapshot": {
-            "observed_at": 1789498399,
-            "primary_pair": "0x9da6f3f22faa4d72cfc7498b5e117a6d36b4bcb8eb0d889e1b54ad663c83ccdf",
-            "price_usd": "0.000003610",
-            "market_cap_usd": 3610,
-            "fdv_usd": 3610,
-            "liquidity_total_usd": 3610.23,
+            "observed_at": 1789498982,
+            "primary_pair": "0xedff6fc44b6d7f10b88b8f6529253ac96e757bf95a7bb66787618f8b307467ad",
+            "price_usd": "0.07986",
+            "market_cap_usd": 457238,
+            "fdv_usd": 457238,
+            "liquidity_total_usd": 61.24,
             "volume": {
               "m5": 0,
-              "h1": 2.27,
-              "h6": 2.27,
-              "h24": 2.27
+              "h1": 0,
+              "h6": 0,
+              "h24": 79.92
             },
             "buys": {
               "m5": 0,
-              "h1": 1,
-              "h6": 1,
-              "h24": 1
+              "h1": 0,
+              "h6": 0,
+              "h24": 3
             },
             "sells": {
               "m5": 0,
               "h1": 0,
               "h6": 0,
-              "h24": 0
+              "h24": 6
+            }
+          }
+        },
+        "fomo": {
+          "status": "NOT_IMPLEMENTED",
+          "evidence": null
+        },
+        "public_scam_trackers": {
+          "status": "NOT_IMPLEMENTED",
+          "evidence": null
+        }
+      },
+      "holder_growth": {
+        "value": null,
+        "confidence": "MISSING"
+      },
+      "concentration_creator_risk": {
+        "structural_status": "UNRESOLVED",
+        "source": null,
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "scam_flags": [],
+      "unresolved_checks": [
+        "creator_history",
+        "creator_linkage",
+        "creator_supply_control",
+        "fomo_attention",
+        "holder_concentration",
+        "holder_growth",
+        "independent_repeat_buyers",
+        "independent_social_attention",
+        "linked_ownership",
+        "liquidity_control",
+        "liquidity_lock_or_removal_control",
+        "mint_admin_permissions",
+        "sellability_and_tax",
+        "sellability_tax"
+      ],
+      "model_review": {
+        "required": true,
+        "state": "NEEDS_MODEL_REVIEW",
+        "allowed_decisions": [
+          "REJECT",
+          "EMERGING",
+          "SCOUT",
+          "CONFIRMED",
+          "COLD / NO ACTION"
+        ],
+        "hard_rule": "REJECT must be returned when structural status is REJECT; UNRESOLVED is never clean.",
+        "judgment_focus": [
+          "buyer acceleration",
+          "independent or repeat buyers when known",
+          "holder growth",
+          "liquidity growth and retention",
+          "improving distribution",
+          "buy-flow quality",
+          "participation growth versus valuation",
+          "consecutive strengthening observations"
+        ],
+        "anti_signal": "Raw volume or transaction count must not dominate judgment."
+      }
+    },
+    {
+      "contract": "0x8825edff851f6fc8f0d91d3942c946910d38771b",
+      "review_state": "NEEDS_MODEL_REVIEW",
+      "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
+      "discovery": {
+        "age_seconds": 139072,
+        "discovered_at": 1789359910,
+        "classification": "NEW_LAUNCH",
+        "sources": [
+          "zero_address_mint"
+        ],
+        "first_seen_block": 62505089,
+        "last_seen_block": 63885065
+      },
+      "raw_chain_evidence": {
+        "source": "analyzer.py bounded exact-contract observations",
+        "lane": "FOLLOWUP",
+        "last_attempt": 0,
+        "executed_price": null,
+        "valuation_conflict": false,
+        "valuation_sources": [],
+        "recent_observations": [],
+        "streams": {},
+        "last_error": null
+      },
+      "enrichment": {
+        "dexscreener": {
+          "status": "NO_EXACT_BASE_PAIR",
+          "source": {
+            "name": "DexScreener",
+            "endpoint": "chain-scoped exact-contract batch",
+            "observed_at": 1789498982,
+            "confidence": "MISSING"
+          },
+          "exact_base_pair_count": 0,
+          "exact_quote_pair_count": 0,
+          "snapshot": null
+        },
+        "fomo": {
+          "status": "NOT_IMPLEMENTED",
+          "evidence": null
+        },
+        "public_scam_trackers": {
+          "status": "NOT_IMPLEMENTED",
+          "evidence": null
+        }
+      },
+      "holder_growth": {
+        "value": null,
+        "confidence": "MISSING"
+      },
+      "concentration_creator_risk": {
+        "structural_status": "UNRESOLVED",
+        "source": null,
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "scam_flags": [],
+      "unresolved_checks": [
+        "creator_history",
+        "creator_linkage",
+        "creator_supply_control",
+        "dexscreener_flow",
+        "dexscreener_liquidity",
+        "dexscreener_market_cap",
+        "dexscreener_price",
+        "fomo_attention",
+        "holder_concentration",
+        "holder_growth",
+        "independent_repeat_buyers",
+        "independent_social_attention",
+        "linked_ownership",
+        "liquidity_control",
+        "liquidity_lock_or_removal_control",
+        "mint_admin_permissions",
+        "sellability_and_tax",
+        "sellability_tax"
+      ],
+      "model_review": {
+        "required": true,
+        "state": "NEEDS_MODEL_REVIEW",
+        "allowed_decisions": [
+          "REJECT",
+          "EMERGING",
+          "SCOUT",
+          "CONFIRMED",
+          "COLD / NO ACTION"
+        ],
+        "hard_rule": "REJECT must be returned when structural status is REJECT; UNRESOLVED is never clean.",
+        "judgment_focus": [
+          "buyer acceleration",
+          "independent or repeat buyers when known",
+          "holder growth",
+          "liquidity growth and retention",
+          "improving distribution",
+          "buy-flow quality",
+          "participation growth versus valuation",
+          "consecutive strengthening observations"
+        ],
+        "anti_signal": "Raw volume or transaction count must not dominate judgment."
+      }
+    },
+    {
+      "contract": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+      "review_state": "NEEDS_MODEL_REVIEW",
+      "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
+      "discovery": {
+        "age_seconds": 157694,
+        "discovered_at": 1789341288,
+        "classification": "NEW_LAUNCH",
+        "sources": [
+          "uniswap_v4_initialize",
+          "zero_address_mint"
+        ],
+        "first_seen_block": 62336652,
+        "last_seen_block": 63885051
+      },
+      "raw_chain_evidence": {
+        "source": "analyzer.py bounded exact-contract observations",
+        "lane": "FOLLOWUP",
+        "last_attempt": 0,
+        "executed_price": null,
+        "valuation_conflict": false,
+        "valuation_sources": [],
+        "recent_observations": [],
+        "streams": {},
+        "last_error": null
+      },
+      "enrichment": {
+        "dexscreener": {
+          "status": "AVAILABLE",
+          "source": {
+            "name": "DexScreener",
+            "endpoint": "chain-scoped exact-contract batch",
+            "observed_at": 1789498982,
+            "confidence": "THIRD_PARTY_AGGREGATE",
+            "identity_match": "exact_base_token_and_chain"
+          },
+          "chain_id": "robinhood",
+          "dex_id": "uniswap",
+          "primary_pair": "0x6707aeAc7D0e519B083219d27BB427364363183A",
+          "pair_url": "https://dexscreener.com/robinhood/0x6707aeac7d0e519b083219d27bb427364363183a",
+          "exact_base_pair_count": 1,
+          "exact_quote_pair_count": 0,
+          "pair_created_at": 1783142786,
+          "pair_age_seconds": 6356196,
+          "fresh_market_cap": {
+            "value": 2049711,
+            "confidence": "MEDIUM",
+            "basis": "marketCap"
+          },
+          "fdv_usd": {
+            "value": 2049711,
+            "confidence": "MEDIUM",
+            "basis": "DexScreener fdv"
+          },
+          "price_trajectory": {
+            "price_usd": {
+              "value": "172.60",
+              "confidence": "MEDIUM",
+              "basis": "primary exact-base pair"
+            },
+            "change_percent": {
+              "m5": 0.1,
+              "h1": -3.55,
+              "h6": -6.23,
+              "h24": -9.12
+            },
+            "previous_price_usd": null
+          },
+          "liquidity": {
+            "primary_pair_usd": {
+              "value": 527549.39,
+              "confidence": "MEDIUM",
+              "basis": "primary pair"
+            },
+            "all_exact_base_pairs_usd": {
+              "value": 527549.39,
+              "confidence": "MEDIUM",
+              "basis": "sum of exact-base pairs"
+            },
+            "change_since_previous_run_usd": null
+          },
+          "buyers_sellers": {
+            "buys": {
+              "m5": 41,
+              "h1": 286,
+              "h6": 683,
+              "h24": 1132
+            },
+            "sells": {
+              "m5": 37,
+              "h1": 478,
+              "h6": 974,
+              "h24": 1676
+            },
+            "meaning": "aggregated swap counts; not unique or independent wallets"
+          },
+          "volume_flow": {
+            "volume_usd": {
+              "m5": 60760.98,
+              "h1": 286670.91,
+              "h6": 588640.43,
+              "h24": 868208.53
+            },
+            "meaning": "aggregated indexed volume; not a quality decision by itself"
+          },
+          "social_profile": {
+            "websites": [],
+            "socials": [],
+            "confidence": "SELF_REPORTED_PROFILE_ONLY"
+          },
+          "helper_context_signals": [
+            "m5_buys_exceed_sells",
+            "m5_volume_pace_above_h1_average"
+          ],
+          "changes_since_previous_run": {
+            "liquidity_usd": null,
+            "volume_m5": null,
+            "buys_m5": null
+          },
+          "snapshot": {
+            "observed_at": 1789498982,
+            "primary_pair": "0x6707aeAc7D0e519B083219d27BB427364363183A",
+            "price_usd": "172.60",
+            "market_cap_usd": 2049711,
+            "fdv_usd": 2049711,
+            "liquidity_total_usd": 527549.39,
+            "volume": {
+              "m5": 60760.98,
+              "h1": 286670.91,
+              "h6": 588640.43,
+              "h24": 868208.53
+            },
+            "buys": {
+              "m5": 41,
+              "h1": 286,
+              "h6": 683,
+              "h24": 1132
+            },
+            "sells": {
+              "m5": 37,
+              "h1": 478,
+              "h6": 974,
+              "h24": 1676
             }
           }
         },

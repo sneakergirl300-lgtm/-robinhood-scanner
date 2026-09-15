@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generated_at": 1789433359,
+  "generated_at": 1789435110,
   "state": "NEEDS_MODEL_REVIEW",
   "pipeline": "DISCOVERY -> FAST_OBSERVATION -> ENRICHMENT -> STRUCTURAL_GATE -> MODEL_REVIEW",
   "input": {
-    "latest_analysis_generated_at": 1789433358,
+    "latest_analysis_generated_at": 1789435110,
     "analysis_stop_reason": "HEAD_UNRESOLVED: HTTP_403",
     "analysis_coverage": "PARTIAL",
     "candidate_count": 8
@@ -23,7 +23,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -50,7 +50,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -134,7 +134,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -161,7 +161,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
@@ -172,7 +172,7 @@
           "exact_base_pair_count": 1,
           "exact_quote_pair_count": 0,
           "pair_created_at": 1789433274,
-          "pair_age_seconds": 85,
+          "pair_age_seconds": 1836,
           "fresh_market_cap": {
             "value": 4356,
             "confidence": "MEDIUM",
@@ -195,7 +195,7 @@
               "h6": null,
               "h24": null
             },
-            "previous_price_usd": null
+            "previous_price_usd": "0.000004356"
           },
           "liquidity": {
             "primary_pair_usd": {
@@ -208,11 +208,11 @@
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
-            "change_since_previous_run_usd": null
+            "change_since_previous_run_usd": 0.0
           },
           "buyers_sellers": {
             "buys": {
-              "m5": 1,
+              "m5": 0,
               "h1": 1,
               "h6": 1,
               "h24": 1
@@ -240,15 +240,15 @@
             "confidence": "SELF_REPORTED_PROFILE_ONLY"
           },
           "helper_context_signals": [
-            "m5_buys_exceed_sells"
+            "indexed_liquidity_retained_since_previous_run"
           ],
           "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
+            "liquidity_usd": 0.0,
+            "volume_m5": 0,
+            "buys_m5": -1
           },
           "snapshot": {
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "primary_pair": "0x4DaE846Fe99fc260c46829b75E55D2a2D5F04614",
             "price_usd": "0.000004356",
             "market_cap_usd": 4356,
@@ -261,7 +261,7 @@
               "h24": 0
             },
             "buys": {
-              "m5": 1,
+              "m5": 0,
               "h1": 1,
               "h6": 1,
               "h24": 1
@@ -347,7 +347,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 30807,
+        "age_seconds": 32558,
         "discovered_at": 1789402552,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -373,7 +373,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -457,7 +457,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -484,7 +484,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -568,7 +568,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -595,7 +595,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -679,7 +679,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -707,7 +707,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -791,7 +791,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -818,7 +818,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -902,7 +902,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 52,
+        "age_seconds": 1803,
         "discovered_at": 1789433307,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -928,7 +928,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789433359,
+            "observed_at": 1789435110,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,

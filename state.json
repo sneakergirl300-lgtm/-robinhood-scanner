@@ -1,89 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 63545685,
-  "last_block_timestamp": 1789463857,
-  "scan_start": 63474173,
-  "scan_start_timestamp": 1789456604,
-  "scan_end": 63545685,
-  "scan_end_timestamp": 1789463857,
-  "scan_window_seconds": 7253,
+  "last_block": 63562921,
+  "last_block_timestamp": 1789465602,
+  "scan_start": 63492431,
+  "scan_start_timestamp": 1789458457,
+  "scan_end": 63562921,
+  "scan_end_timestamp": 1789465602,
+  "scan_window_seconds": 7145,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 63440520,
-        "end": 63441519
-      },
-      {
-        "start": 63442020,
-        "end": 63443519
-      },
-      {
-        "start": 63444020,
-        "end": 63445519
-      },
-      {
-        "start": 63446020,
-        "end": 63446519
-      },
-      {
-        "start": 63463206,
-        "end": 63463705
-      },
-      {
-        "start": 63464206,
-        "end": 63464705
-      },
-      {
-        "start": 63466706,
-        "end": 63467205
-      },
-      {
-        "start": 63469706,
-        "end": 63470205
-      },
-      {
-        "start": 63470706,
-        "end": 63471205
-      },
-      {
-        "start": 63472706,
-        "end": 63473205
-      },
-      {
-        "start": 63473706,
-        "end": 63545685
-      }
-    ],
-    "factory": [
-      {
-        "start": 63465706,
-        "end": 63466205
-      },
-      {
-        "start": 63466706,
-        "end": 63467205
-      },
-      {
-        "start": 63467706,
-        "end": 63468705
-      },
-      {
-        "start": 63474173,
-        "end": 63545685
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 63470706,
-        "end": 63545685
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 63444520,
@@ -162,128 +90,8 @@
         "end": 63492205
       },
       {
-        "start": 63493706,
-        "end": 63494705
-      },
-      {
-        "start": 63495206,
-        "end": 63495705
-      },
-      {
-        "start": 63497206,
-        "end": 63497705
-      },
-      {
-        "start": 63498206,
-        "end": 63498705
-      },
-      {
-        "start": 63499206,
-        "end": 63500205
-      },
-      {
-        "start": 63500706,
-        "end": 63501205
-      },
-      {
-        "start": 63501706,
-        "end": 63502205
-      },
-      {
-        "start": 63502706,
-        "end": 63503705
-      },
-      {
-        "start": 63504206,
-        "end": 63505705
-      },
-      {
-        "start": 63506206,
-        "end": 63507705
-      },
-      {
-        "start": 63508206,
-        "end": 63509205
-      },
-      {
-        "start": 63510706,
-        "end": 63511205
-      },
-      {
-        "start": 63512706,
-        "end": 63513705
-      },
-      {
-        "start": 63514706,
-        "end": 63515205
-      },
-      {
-        "start": 63516706,
-        "end": 63517705
-      },
-      {
-        "start": 63518206,
-        "end": 63519205
-      },
-      {
-        "start": 63519706,
-        "end": 63520205
-      },
-      {
-        "start": 63520706,
-        "end": 63521205
-      },
-      {
-        "start": 63521706,
-        "end": 63522205
-      },
-      {
-        "start": 63522706,
-        "end": 63523205
-      },
-      {
-        "start": 63523706,
-        "end": 63525205
-      },
-      {
-        "start": 63525706,
-        "end": 63526205
-      },
-      {
-        "start": 63526706,
-        "end": 63527705
-      },
-      {
-        "start": 63528206,
-        "end": 63528705
-      },
-      {
-        "start": 63529706,
-        "end": 63530705
-      },
-      {
-        "start": 63532706,
-        "end": 63533705
-      },
-      {
-        "start": 63534206,
-        "end": 63535205
-      },
-      {
-        "start": 63537706,
-        "end": 63538205
-      },
-      {
-        "start": 63538706,
-        "end": 63539705
-      },
-      {
-        "start": 63540206,
-        "end": 63540705
-      },
-      {
-        "start": 63544706,
-        "end": 63545205
+        "start": 63492431,
+        "end": 63562921
       }
     ],
     "factory": [
@@ -317,71 +125,7 @@
       },
       {
         "start": 63491673,
-        "end": 63493172
-      },
-      {
-        "start": 63493673,
-        "end": 63495172
-      },
-      {
-        "start": 63495673,
-        "end": 63497172
-      },
-      {
-        "start": 63497673,
-        "end": 63499172
-      },
-      {
-        "start": 63499673,
-        "end": 63500672
-      },
-      {
-        "start": 63501173,
-        "end": 63502172
-      },
-      {
-        "start": 63503673,
-        "end": 63504172
-      },
-      {
-        "start": 63504673,
-        "end": 63505672
-      },
-      {
-        "start": 63506173,
-        "end": 63508172
-      },
-      {
-        "start": 63508673,
-        "end": 63510172
-      },
-      {
-        "start": 63510673,
-        "end": 63511672
-      },
-      {
-        "start": 63515673,
-        "end": 63516672
-      },
-      {
-        "start": 63521673,
-        "end": 63522172
-      },
-      {
-        "start": 63539173,
-        "end": 63540172
-      },
-      {
-        "start": 63540673,
-        "end": 63542172
-      },
-      {
-        "start": 63542673,
-        "end": 63543672
-      },
-      {
-        "start": 63544173,
-        "end": 63545672
+        "end": 63562921
       }
     ],
     "uniswap_v4_initialize": [
@@ -410,40 +154,272 @@
         "end": 63492205
       },
       {
-        "start": 63542706,
-        "end": 63543705
+        "start": 63492431,
+        "end": 63562921
       }
     ]
   },
-  "zero_mint_logs": 55979,
-  "erc20_zero_mint_logs": 46838,
-  "factory_logs": 5897,
-  "factory_corroborated_token_mints": 2540,
-  "uniswap_v4_initialize_logs": 655,
-  "events_seen": 62531,
-  "unique_contracts_this_run": 2063,
-  "unique_candidates_this_run": 2063,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 63466706,
+        "end": 63467205
+      },
+      {
+        "start": 63478706,
+        "end": 63479205
+      },
+      {
+        "start": 63480206,
+        "end": 63480705
+      },
+      {
+        "start": 63482706,
+        "end": 63483205
+      },
+      {
+        "start": 63484206,
+        "end": 63484705
+      },
+      {
+        "start": 63486706,
+        "end": 63487205
+      },
+      {
+        "start": 63488206,
+        "end": 63488705
+      },
+      {
+        "start": 63491706,
+        "end": 63492205
+      },
+      {
+        "start": 63493431,
+        "end": 63493930
+      },
+      {
+        "start": 63494931,
+        "end": 63495430
+      },
+      {
+        "start": 63495931,
+        "end": 63496430
+      },
+      {
+        "start": 63497931,
+        "end": 63498430
+      },
+      {
+        "start": 63498931,
+        "end": 63499430
+      },
+      {
+        "start": 63501431,
+        "end": 63501930
+      },
+      {
+        "start": 63502431,
+        "end": 63502930
+      },
+      {
+        "start": 63503431,
+        "end": 63503930
+      },
+      {
+        "start": 63504431,
+        "end": 63504930
+      },
+      {
+        "start": 63507931,
+        "end": 63508430
+      },
+      {
+        "start": 63508931,
+        "end": 63509430
+      },
+      {
+        "start": 63509931,
+        "end": 63510430
+      },
+      {
+        "start": 63511431,
+        "end": 63511930
+      },
+      {
+        "start": 63512431,
+        "end": 63512930
+      },
+      {
+        "start": 63513431,
+        "end": 63513930
+      },
+      {
+        "start": 63514431,
+        "end": 63514930
+      },
+      {
+        "start": 63517431,
+        "end": 63517930
+      },
+      {
+        "start": 63518431,
+        "end": 63518930
+      },
+      {
+        "start": 63519431,
+        "end": 63519930
+      },
+      {
+        "start": 63520431,
+        "end": 63520930
+      },
+      {
+        "start": 63521931,
+        "end": 63522430
+      },
+      {
+        "start": 63522931,
+        "end": 63523430
+      },
+      {
+        "start": 63524431,
+        "end": 63524930
+      },
+      {
+        "start": 63525931,
+        "end": 63526430
+      },
+      {
+        "start": 63530431,
+        "end": 63530930
+      },
+      {
+        "start": 63531431,
+        "end": 63531930
+      },
+      {
+        "start": 63539431,
+        "end": 63539930
+      },
+      {
+        "start": 63540431,
+        "end": 63540930
+      },
+      {
+        "start": 63541431,
+        "end": 63541930
+      },
+      {
+        "start": 63543431,
+        "end": 63543930
+      },
+      {
+        "start": 63544931,
+        "end": 63545430
+      },
+      {
+        "start": 63545931,
+        "end": 63546430
+      },
+      {
+        "start": 63546931,
+        "end": 63547430
+      },
+      {
+        "start": 63547931,
+        "end": 63548430
+      },
+      {
+        "start": 63551931,
+        "end": 63562921
+      }
+    ],
+    "factory": [
+      {
+        "start": 63466706,
+        "end": 63467205
+      },
+      {
+        "start": 63468206,
+        "end": 63468705
+      },
+      {
+        "start": 63474673,
+        "end": 63476172
+      },
+      {
+        "start": 63478173,
+        "end": 63478672
+      },
+      {
+        "start": 63486173,
+        "end": 63487172
+      },
+      {
+        "start": 63487673,
+        "end": 63489172
+      },
+      {
+        "start": 63489673,
+        "end": 63491172
+      },
+      {
+        "start": 63491673,
+        "end": 63562921
+      }
+    ],
+    "uniswap_v4_initialize": [
+      {
+        "start": 63472706,
+        "end": 63473205
+      },
+      {
+        "start": 63481706,
+        "end": 63483705
+      },
+      {
+        "start": 63486206,
+        "end": 63487705
+      },
+      {
+        "start": 63488206,
+        "end": 63488705
+      },
+      {
+        "start": 63489206,
+        "end": 63491205
+      },
+      {
+        "start": 63491706,
+        "end": 63492205
+      },
+      {
+        "start": 63492431,
+        "end": 63562921
+      }
+    ]
+  },
+  "zero_mint_logs": 69568,
+  "erc20_zero_mint_logs": 58980,
+  "factory_logs": 0,
+  "factory_corroborated_token_mints": 0,
+  "uniswap_v4_initialize_logs": 0,
+  "events_seen": 69568,
+  "unique_contracts_this_run": 2029,
+  "unique_candidates_this_run": 2029,
   "candidate_source_counts": {
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 24,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 1,
-    "factory_mint:0x77dc6f6361b7b99456fc3761ce5b7dda80d83f9d": 4,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 672,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 202,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 46,
-    "uniswap_v4_initialize": 540,
-    "zero_address_mint": 1732
+    "zero_address_mint": 2029
   },
   "classification_counts": {
-    "NEW_LAUNCH": 1732,
-    "NEW_MARKET": 331
+    "NEW_LAUNCH": 2029
   },
-  "new_contracts_added": 488,
-  "new_candidates": 488,
-  "existing_contracts_updated": 226,
-  "stored_candidates": 55376,
-  "total_persisted_contracts": 55376,
+  "new_contracts_added": 289,
+  "new_candidates": 289,
+  "existing_contracts_updated": 68,
+  "stored_candidates": 55665,
+  "total_persisted_contracts": 55665,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 52.92,
-  "updated_at_unix": 1789463912,
+  "runtime_seconds": 90.86,
+  "updated_at_unix": 1789465695,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

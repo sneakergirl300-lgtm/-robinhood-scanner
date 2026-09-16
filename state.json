@@ -1,85 +1,17 @@
 {
   "collector_version": 7,
-  "last_block": 64375350,
-  "last_block_timestamp": 1789548292,
-  "scan_start": 64307140,
-  "scan_start_timestamp": 1789541428,
-  "scan_end": 64375350,
-  "scan_end_timestamp": 1789548292,
-  "scan_window_seconds": 6864,
+  "last_block": 64383483,
+  "last_block_timestamp": 1789549111,
+  "scan_start": 64321687,
+  "scan_start_timestamp": 1789542892,
+  "scan_end": 64383483,
+  "scan_end_timestamp": 1789549111,
+  "scan_window_seconds": 6219,
   "required_overlap_seconds": 5400,
   "mode": "overlap_90m",
   "coverage_status": "PARTIAL",
   "coverage_complete": false,
   "requested_ranges": {
-    "zero_mint": [
-      {
-        "start": 64245871,
-        "end": 64246370
-      },
-      {
-        "start": 64248371,
-        "end": 64248870
-      },
-      {
-        "start": 64252371,
-        "end": 64252870
-      },
-      {
-        "start": 64253871,
-        "end": 64254370
-      },
-      {
-        "start": 64254871,
-        "end": 64255370
-      },
-      {
-        "start": 64255871,
-        "end": 64256370
-      },
-      {
-        "start": 64256871,
-        "end": 64257370
-      },
-      {
-        "start": 64276119,
-        "end": 64276618
-      },
-      {
-        "start": 64280619,
-        "end": 64281118
-      },
-      {
-        "start": 64285086,
-        "end": 64289585
-      },
-      {
-        "start": 64307140,
-        "end": 64375350
-      }
-    ],
-    "factory": [
-      {
-        "start": 64298744,
-        "end": 64299243
-      },
-      {
-        "start": 64299744,
-        "end": 64300243
-      },
-      {
-        "start": 64307140,
-        "end": 64375350
-      }
-    ],
-    "uniswap_v4_initialize": [
-      {
-        "start": 64307140,
-        "end": 64375350
-      }
-    ]
-  },
-  "failed_ranges": {
     "zero_mint": [
       {
         "start": 64285586,
@@ -95,195 +27,7 @@
       },
       {
         "start": 64318640,
-        "end": 64325139
-      },
-      {
-        "start": 64325640,
-        "end": 64329139
-      },
-      {
-        "start": 64329640,
-        "end": 64330139
-      },
-      {
-        "start": 64330640,
-        "end": 64331139
-      },
-      {
-        "start": 64331640,
-        "end": 64332139
-      },
-      {
-        "start": 64332640,
-        "end": 64333139
-      },
-      {
-        "start": 64333640,
-        "end": 64334139
-      },
-      {
-        "start": 64334640,
-        "end": 64335139
-      },
-      {
-        "start": 64335640,
-        "end": 64336139
-      },
-      {
-        "start": 64336640,
-        "end": 64337139
-      },
-      {
-        "start": 64337640,
-        "end": 64338139
-      },
-      {
-        "start": 64338640,
-        "end": 64339139
-      },
-      {
-        "start": 64339640,
-        "end": 64340139
-      },
-      {
-        "start": 64340640,
-        "end": 64341139
-      },
-      {
-        "start": 64341640,
-        "end": 64342139
-      },
-      {
-        "start": 64342640,
-        "end": 64343139
-      },
-      {
-        "start": 64343640,
-        "end": 64344139
-      },
-      {
-        "start": 64344640,
-        "end": 64345139
-      },
-      {
-        "start": 64345640,
-        "end": 64346139
-      },
-      {
-        "start": 64346640,
-        "end": 64347139
-      },
-      {
-        "start": 64347640,
-        "end": 64348139
-      },
-      {
-        "start": 64348640,
-        "end": 64349139
-      },
-      {
-        "start": 64349640,
-        "end": 64350139
-      },
-      {
-        "start": 64350640,
-        "end": 64351139
-      },
-      {
-        "start": 64351640,
-        "end": 64352139
-      },
-      {
-        "start": 64352640,
-        "end": 64353139
-      },
-      {
-        "start": 64353640,
-        "end": 64354139
-      },
-      {
-        "start": 64354640,
-        "end": 64355139
-      },
-      {
-        "start": 64355640,
-        "end": 64356139
-      },
-      {
-        "start": 64356640,
-        "end": 64357139
-      },
-      {
-        "start": 64357640,
-        "end": 64358139
-      },
-      {
-        "start": 64358640,
-        "end": 64359139
-      },
-      {
-        "start": 64359640,
-        "end": 64360139
-      },
-      {
-        "start": 64360640,
-        "end": 64361139
-      },
-      {
-        "start": 64361640,
-        "end": 64362139
-      },
-      {
-        "start": 64362640,
-        "end": 64363139
-      },
-      {
-        "start": 64363640,
-        "end": 64364139
-      },
-      {
-        "start": 64364640,
-        "end": 64365139
-      },
-      {
-        "start": 64365640,
-        "end": 64366139
-      },
-      {
-        "start": 64366640,
-        "end": 64367139
-      },
-      {
-        "start": 64367640,
-        "end": 64368139
-      },
-      {
-        "start": 64368640,
-        "end": 64369139
-      },
-      {
-        "start": 64369640,
-        "end": 64370139
-      },
-      {
-        "start": 64370640,
-        "end": 64371139
-      },
-      {
-        "start": 64371640,
-        "end": 64372139
-      },
-      {
-        "start": 64372640,
-        "end": 64373139
-      },
-      {
-        "start": 64373640,
-        "end": 64374139
-      },
-      {
-        "start": 64374640,
-        "end": 64375139
+        "end": 64383483
       }
     ],
     "factory": [
@@ -316,106 +60,86 @@
         "end": 64321139
       },
       {
-        "start": 64322140,
-        "end": 64322639
-      },
-      {
-        "start": 64325140,
-        "end": 64325639
-      },
-      {
-        "start": 64330140,
-        "end": 64330639
-      },
-      {
-        "start": 64332140,
-        "end": 64332639
-      },
-      {
-        "start": 64333140,
-        "end": 64333639
-      },
-      {
-        "start": 64342640,
-        "end": 64343139
-      },
-      {
-        "start": 64344140,
-        "end": 64344639
-      },
-      {
-        "start": 64350140,
-        "end": 64350639
-      },
-      {
-        "start": 64351140,
-        "end": 64351639
-      },
-      {
-        "start": 64352140,
-        "end": 64352639
-      },
-      {
-        "start": 64357140,
-        "end": 64357639
-      },
-      {
-        "start": 64361640,
-        "end": 64362139
-      },
-      {
-        "start": 64364140,
-        "end": 64364639
-      },
-      {
-        "start": 64365640,
-        "end": 64366139
+        "start": 64321687,
+        "end": 64383483
       }
     ],
     "uniswap_v4_initialize": [
       {
-        "start": 64346640,
-        "end": 64347639
-      },
-      {
-        "start": 64353640,
-        "end": 64354639
-      },
-      {
-        "start": 64357140,
-        "end": 64358139
+        "start": 64321687,
+        "end": 64383483
       }
     ]
   },
-  "zero_mint_logs": 27616,
-  "erc20_zero_mint_logs": 20778,
-  "factory_logs": 3403,
-  "factory_corroborated_token_mints": 1851,
-  "uniswap_v4_initialize_logs": 491,
-  "events_seen": 31510,
-  "unique_contracts_this_run": 820,
-  "unique_candidates_this_run": 820,
+  "failed_ranges": {
+    "zero_mint": [
+      {
+        "start": 64288086,
+        "end": 64289585
+      },
+      {
+        "start": 64307140,
+        "end": 64308639
+      },
+      {
+        "start": 64309140,
+        "end": 64310139
+      },
+      {
+        "start": 64310640,
+        "end": 64312139
+      },
+      {
+        "start": 64312640,
+        "end": 64315139
+      },
+      {
+        "start": 64315640,
+        "end": 64316639
+      },
+      {
+        "start": 64322640,
+        "end": 64323139
+      },
+      {
+        "start": 64350640,
+        "end": 64351139
+      },
+      {
+        "start": 64355640,
+        "end": 64356139
+      }
+    ]
+  },
+  "zero_mint_logs": 64366,
+  "erc20_zero_mint_logs": 48447,
+  "factory_logs": 3905,
+  "factory_corroborated_token_mints": 6051,
+  "uniswap_v4_initialize_logs": 512,
+  "events_seen": 68783,
+  "unique_contracts_this_run": 1399,
+  "unique_candidates_this_run": 1399,
   "candidate_source_counts": {
-    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 20,
-    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 55,
-    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 171,
-    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 95,
+    "factory_mint:0x0000ffffbe8efe702c8703ae3477ff5de3d319c0": 55,
+    "factory_mint:0x26605f322f7ff986f381bb9a6e3f5dab0beaeb09": 178,
+    "factory_mint:0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e": 600,
+    "factory_mint:0xe33e9e479df8802cb0866d5d05258bec4cf62948": 332,
     "factory_mint:0xe8cc4431adf8b5a847c113ef0c6af9043219cb37": 1,
-    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 24,
-    "uniswap_v4_initialize": 315,
-    "zero_address_mint": 595
+    "factory_mint:0xeb7c034704ef8dcd2d32324c1545f62fb4ad0862": 76,
+    "uniswap_v4_initialize": 330,
+    "zero_address_mint": 1324
   },
   "classification_counts": {
-    "NEW_LAUNCH": 595,
-    "NEW_MARKET": 225
+    "NEW_LAUNCH": 1324,
+    "NEW_MARKET": 75
   },
-  "new_contracts_added": 148,
-  "new_candidates": 148,
-  "existing_contracts_updated": 84,
-  "stored_candidates": 91478,
-  "total_persisted_contracts": 91478,
+  "new_contracts_added": 266,
+  "new_candidates": 266,
+  "existing_contracts_updated": 122,
+  "stored_candidates": 91744,
+  "total_persisted_contracts": 91744,
   "polluted_rows_removed": 0,
-  "runtime_seconds": 37.35,
-  "updated_at_unix": 1789548330,
+  "runtime_seconds": 65.75,
+  "updated_at_unix": 1789549177,
   "rpc": "https://rpc.mainnet.chain.robinhood.com"
 }

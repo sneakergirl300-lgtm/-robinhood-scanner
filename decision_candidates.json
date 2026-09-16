@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generated_at": 1789551855,
+  "generated_at": 1789552730,
   "state": "NEEDS_MODEL_REVIEW",
   "pipeline": "DISCOVERY -> FAST_OBSERVATION -> ENRICHMENT -> STRUCTURAL_GATE -> MODEL_REVIEW",
   "input": {
-    "latest_analysis_generated_at": 1789551853,
+    "latest_analysis_generated_at": 1789552729,
     "analysis_stop_reason": "HEAD_UNRESOLVED: HTTP_403",
     "analysis_coverage": "PARTIAL",
     "candidate_count": 8
@@ -23,7 +23,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 32146,
+        "age_seconds": 33021,
         "discovered_at": 1789519709,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -51,7 +51,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
@@ -62,7 +62,7 @@
           "exact_base_pair_count": 1,
           "exact_quote_pair_count": 0,
           "pair_created_at": 1789519203,
-          "pair_age_seconds": 32652,
+          "pair_age_seconds": 33527,
           "fresh_market_cap": {
             "value": 6130,
             "confidence": "MEDIUM",
@@ -80,12 +80,12 @@
               "basis": "primary exact-base pair"
             },
             "change_percent": {
-              "m5": -0.15,
+              "m5": null,
               "h1": -0.15,
               "h6": 0.23,
               "h24": -82.21
             },
-            "previous_price_usd": null
+            "previous_price_usd": "0.000006129"
           },
           "liquidity": {
             "primary_pair_usd": {
@@ -98,11 +98,11 @@
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
-            "change_since_previous_run_usd": null
+            "change_since_previous_run_usd": 0.0
           },
           "buyers_sellers": {
             "buys": {
-              "m5": 1,
+              "m5": 0,
               "h1": 1,
               "h6": 2,
               "h24": 995
@@ -117,7 +117,7 @@
           },
           "volume_flow": {
             "volume_usd": {
-              "m5": 0.29,
+              "m5": 0,
               "h1": 0.29,
               "h6": 47.89,
               "h24": 140686.1
@@ -130,29 +130,28 @@
             "confidence": "SELF_REPORTED_PROFILE_ONLY"
           },
           "helper_context_signals": [
-            "m5_buys_exceed_sells",
-            "m5_volume_pace_above_h1_average"
+            "indexed_liquidity_retained_since_previous_run"
           ],
           "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
+            "liquidity_usd": 0.0,
+            "volume_m5": -0.29,
+            "buys_m5": -1
           },
           "snapshot": {
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "primary_pair": "0x9de937737413619ad17b7a854a5a0a9a0b2d6fe57e9cb6b35e4495c03bcca981",
             "price_usd": "0.000006129",
             "market_cap_usd": 6130,
             "fdv_usd": 6130,
             "liquidity_total_usd": 6166.17,
             "volume": {
-              "m5": 0.29,
+              "m5": 0,
               "h1": 0.29,
               "h6": 47.89,
               "h24": 140686.1
             },
             "buys": {
-              "m5": 1,
+              "m5": 0,
               "h1": 1,
               "h6": 2,
               "h24": 995
@@ -238,7 +237,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 41,
+        "age_seconds": 916,
         "discovered_at": 1789551814,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -264,7 +263,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -348,7 +347,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 8834,
+        "age_seconds": 9709,
         "discovered_at": 1789543021,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -375,7 +374,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -459,7 +458,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 73588,
+        "age_seconds": 74463,
         "discovered_at": 1789478267,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -487,7 +486,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "THIRD_PARTY_AGGREGATE",
             "identity_match": "exact_base_token_and_chain"
           },
@@ -498,65 +497,65 @@
           "exact_base_pair_count": 1,
           "exact_quote_pair_count": 0,
           "pair_created_at": 1789478038,
-          "pair_age_seconds": 73817,
+          "pair_age_seconds": 74692,
           "fresh_market_cap": {
-            "value": 212905,
+            "value": 208752,
             "confidence": "MEDIUM",
             "basis": "marketCap"
           },
           "fdv_usd": {
-            "value": 212905,
+            "value": 208752,
             "confidence": "MEDIUM",
             "basis": "DexScreener fdv"
           },
           "price_trajectory": {
             "price_usd": {
-              "value": "0.0002129",
+              "value": "0.0002087",
               "confidence": "MEDIUM",
               "basis": "primary exact-base pair"
             },
             "change_percent": {
-              "m5": 1.83,
-              "h1": -21.88,
-              "h6": 132,
-              "h24": 315
+              "m5": -6.34,
+              "h1": 6.88,
+              "h6": 141,
+              "h24": 307
             },
-            "previous_price_usd": null
+            "previous_price_usd": "0.0002129"
           },
           "liquidity": {
             "primary_pair_usd": {
-              "value": 41864.75,
+              "value": 41472.08,
               "confidence": "MEDIUM",
               "basis": "primary pair"
             },
             "all_exact_base_pairs_usd": {
-              "value": 41864.75,
+              "value": 41472.08,
               "confidence": "MEDIUM",
               "basis": "sum of exact-base pairs"
             },
-            "change_since_previous_run_usd": null
+            "change_since_previous_run_usd": -392.66999999999825
           },
           "buyers_sellers": {
             "buys": {
-              "m5": 2,
+              "m5": 4,
               "h1": 40,
-              "h6": 164,
-              "h24": 2498
+              "h6": 174,
+              "h24": 2508
             },
             "sells": {
-              "m5": 1,
-              "h1": 74,
-              "h6": 250,
-              "h24": 2674
+              "m5": 12,
+              "h1": 54,
+              "h6": 261,
+              "h24": 2690
             },
             "meaning": "aggregated swap counts; not unique or independent wallets"
           },
           "volume_flow": {
             "volume_usd": {
-              "m5": 201.04,
-              "h1": 11868.41,
-              "h6": 40747.83,
-              "h24": 506118.97
+              "m5": 1867.06,
+              "h1": 8788.56,
+              "h6": 43264.72,
+              "h24": 509029.61
             },
             "meaning": "aggregated indexed volume; not a quality decision by itself"
           },
@@ -571,37 +570,38 @@
             "confidence": "SELF_REPORTED_PROFILE_ONLY"
           },
           "helper_context_signals": [
-            "m5_buys_exceed_sells"
+            "m5_volume_pace_above_h1_average",
+            "m5_buys_increased_since_previous_run"
           ],
           "changes_since_previous_run": {
-            "liquidity_usd": null,
-            "volume_m5": null,
-            "buys_m5": null
+            "liquidity_usd": -392.66999999999825,
+            "volume_m5": 1666.02,
+            "buys_m5": 2
           },
           "snapshot": {
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "primary_pair": "0x84ee7bda8d15c2605eb78326862827f961d659cc2ba97d26845cd0156e6e5606",
-            "price_usd": "0.0002129",
-            "market_cap_usd": 212905,
-            "fdv_usd": 212905,
-            "liquidity_total_usd": 41864.75,
+            "price_usd": "0.0002087",
+            "market_cap_usd": 208752,
+            "fdv_usd": 208752,
+            "liquidity_total_usd": 41472.08,
             "volume": {
-              "m5": 201.04,
-              "h1": 11868.41,
-              "h6": 40747.83,
-              "h24": 506118.97
+              "m5": 1867.06,
+              "h1": 8788.56,
+              "h6": 43264.72,
+              "h24": 509029.61
             },
             "buys": {
-              "m5": 2,
+              "m5": 4,
               "h1": 40,
-              "h6": 164,
-              "h24": 2498
+              "h6": 174,
+              "h24": 2508
             },
             "sells": {
-              "m5": 1,
-              "h1": 74,
-              "h6": 250,
-              "h24": 2674
+              "m5": 12,
+              "h1": 54,
+              "h6": 261,
+              "h24": 2690
             }
           }
         },
@@ -678,7 +678,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 41,
+        "age_seconds": 916,
         "discovered_at": 1789551814,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -704,7 +704,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -788,7 +788,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 41,
+        "age_seconds": 916,
         "discovered_at": 1789551814,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -814,7 +814,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -898,7 +898,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 193657,
+        "age_seconds": 194532,
         "discovered_at": 1789358198,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -924,7 +924,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,
@@ -1008,7 +1008,7 @@
       "review_state": "NEEDS_MODEL_REVIEW",
       "promotion_guard": "STRUCTURAL_UNRESOLVED_OBSERVATION_ONLY",
       "discovery": {
-        "age_seconds": 181399,
+        "age_seconds": 182274,
         "discovered_at": 1789370456,
         "classification": "NEW_LAUNCH",
         "sources": [
@@ -1034,7 +1034,7 @@
           "source": {
             "name": "DexScreener",
             "endpoint": "chain-scoped exact-contract batch",
-            "observed_at": 1789551855,
+            "observed_at": 1789552730,
             "confidence": "MISSING"
           },
           "exact_base_pair_count": 0,

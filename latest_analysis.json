@@ -1,21 +1,21 @@
 {
   "version": 3,
-  "generated_at": 1789579109,
+  "generated_at": 1789686016,
   "stop_reason": "HEAD_UNRESOLVED: HTTP_403",
   "rpc_calls": 1,
-  "runtime_seconds": 0.584,
+  "runtime_seconds": 0.509,
   "collector_coverage": "PARTIAL",
-  "collector_updated_at": 1789579046,
-  "collector_age_seconds": 62,
-  "universe_count": 92187,
+  "collector_updated_at": 1789685988,
+  "collector_age_seconds": 27,
+  "universe_count": 92227,
   "selected": 8,
   "attempted": 0,
-  "due_remaining": 200,
+  "due_remaining": 50,
   "analysis_coverage": "PARTIAL",
   "alerts": [],
   "tokens": [
     {
-      "address": "0x86207c27d8ee5d0a261890f27791c0ded21ab136",
+      "address": "0x0ccceb3afc7af33d3138cd56b51fa61b8a79e043",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -34,12 +34,12 @@
       "discovery_sources": [
         "zero_address_mint"
       ],
-      "discovered_at": 1789358198,
-      "first_seen_block": 62494955,
-      "last_seen_block": 64431989,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789685827,
+      "first_seen_block": 64399526,
+      "last_seen_block": 64399526,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -56,7 +56,7 @@
       "last_error": null
     },
     {
-      "address": "0x9a79abc72b54c902d7cebdcc4c8109b873651697",
+      "address": "0xf3b49cf6f69d931d7ccc3d1ad2ddf71e31c8f0d0",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -75,12 +75,12 @@
       "discovery_sources": [
         "zero_address_mint"
       ],
-      "discovered_at": 1789539848,
-      "first_seen_block": 64276117,
-      "last_seen_block": 64431951,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789685827,
+      "first_seen_block": 64399447,
+      "last_seen_block": 64399447,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -97,7 +97,7 @@
       "last_error": null
     },
     {
-      "address": "0x803b4ff6234224b14b89d97b859863d0c528b5a7",
+      "address": "0x985dd613afe51f2faa7c8064771dca79b0c1779c",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -114,15 +114,14 @@
       },
       "classification": "NEW_LAUNCH",
       "discovery_sources": [
-        "uniswap_v4_initialize",
         "zero_address_mint"
       ],
-      "discovered_at": 1789443924,
-      "first_seen_block": 63345529,
-      "last_seen_block": 64431945,
-      "lane": "FOLLOWUP",
+      "discovered_at": 1789685827,
+      "first_seen_block": 64399441,
+      "last_seen_block": 64399441,
+      "lane": "NEW",
       "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -139,7 +138,89 @@
       "last_error": null
     },
     {
-      "address": "0x93f777932d98d15b351d1bce8c76b34381eede5b",
+      "address": "0x30b11d7f826611f067dfef41f46ab520b12f35cb",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "classification": "NEW_LAUNCH",
+      "discovery_sources": [
+        "zero_address_mint"
+      ],
+      "discovered_at": 1789685827,
+      "first_seen_block": 64399390,
+      "last_seen_block": 64399390,
+      "lane": "NEW",
+      "last_attempt": 0,
+      "next_due": 1789686015,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0xc87d5cfd8b8cd285547cbe0ea85b99a0048f20b1",
+      "status": "UNRESOLVED",
+      "structural_gate": {
+        "status": "UNRESOLVED",
+        "flags": [],
+        "unresolved": [
+          "creator_supply_control",
+          "holder_concentration",
+          "linked_ownership",
+          "mint_admin_permissions",
+          "sellability_tax",
+          "liquidity_control",
+          "creator_history"
+        ]
+      },
+      "classification": "NEW_LAUNCH",
+      "discovery_sources": [
+        "zero_address_mint"
+      ],
+      "discovered_at": 1789685827,
+      "first_seen_block": 64399347,
+      "last_seen_block": 64399347,
+      "lane": "NEW",
+      "last_attempt": 0,
+      "next_due": 1789686015,
+      "executed_price": null,
+      "valuation_conflict": false,
+      "valuation_sources": [],
+      "market_cap_status": "MC UNRESOLVED",
+      "market_cap_usd": null,
+      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
+      "holders": null,
+      "independent_buyers": null,
+      "liquidity_usd": null,
+      "acceleration": "UNRESOLVED",
+      "actionable_alert": null,
+      "streams": {},
+      "recent_observations": [],
+      "last_error": null
+    },
+    {
+      "address": "0x484fbc2fba4b9bb08964a3ff96fb61511ce70b15",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -159,11 +240,11 @@
         "zero_address_mint"
       ],
       "discovered_at": 1789368707,
-      "first_seen_block": 62598868,
-      "last_seen_block": 64431896,
+      "first_seen_block": 62595912,
+      "last_seen_block": 64399212,
       "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -180,7 +261,7 @@
       "last_error": null
     },
     {
-      "address": "0xa75c2b79c98c8eaa67e98e786935935617100967",
+      "address": "0xab434c4b97646bd31de1cc7e2462a71290fb1b24",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -199,12 +280,12 @@
       "discovery_sources": [
         "zero_address_mint"
       ],
-      "discovered_at": 1789341971,
-      "first_seen_block": 62329680,
-      "last_seen_block": 64431892,
+      "discovered_at": 1789368707,
+      "first_seen_block": 62595905,
+      "last_seen_block": 64399205,
       "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
@@ -221,7 +302,7 @@
       "last_error": null
     },
     {
-      "address": "0x8813d319aeb2d22233d611b3697c583dbbae6bcb",
+      "address": "0x5485ac84e84bd89a2ca8e686c392bcf8ef5434ad",
       "status": "UNRESOLVED",
       "structural_gate": {
         "status": "UNRESOLVED",
@@ -240,94 +321,12 @@
       "discovery_sources": [
         "zero_address_mint"
       ],
-      "discovered_at": 1789579019,
-      "first_seen_block": 64431840,
-      "last_seen_block": 64431840,
-      "lane": "NEW",
+      "discovered_at": 1789337692,
+      "first_seen_block": 62297270,
+      "last_seen_block": 64399173,
+      "lane": "FOLLOWUP",
       "last_attempt": 0,
-      "next_due": 1789579108,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0x1147329379944c3e4f5b7a2c9cb273ccdc387777",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "classification": "NEW_LAUNCH",
-      "discovery_sources": [
-        "zero_address_mint"
-      ],
-      "discovered_at": 1789579019,
-      "first_seen_block": 64431769,
-      "last_seen_block": 64431769,
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789579108,
-      "executed_price": null,
-      "valuation_conflict": false,
-      "valuation_sources": [],
-      "market_cap_status": "MC UNRESOLVED",
-      "market_cap_usd": null,
-      "valuation_reason": "Effective supply and USD conversion are not verified; USDG is a quote unit, not a verified USD peg. Executed trade price does not prove current size-dependent exit price.",
-      "holders": null,
-      "independent_buyers": null,
-      "liquidity_usd": null,
-      "acceleration": "UNRESOLVED",
-      "actionable_alert": null,
-      "streams": {},
-      "recent_observations": [],
-      "last_error": null
-    },
-    {
-      "address": "0x6aacde06258d8cb1929c693e739eb88cae4acd3f",
-      "status": "UNRESOLVED",
-      "structural_gate": {
-        "status": "UNRESOLVED",
-        "flags": [],
-        "unresolved": [
-          "creator_supply_control",
-          "holder_concentration",
-          "linked_ownership",
-          "mint_admin_permissions",
-          "sellability_tax",
-          "liquidity_control",
-          "creator_history"
-        ]
-      },
-      "classification": "NEW_LAUNCH",
-      "discovery_sources": [
-        "zero_address_mint"
-      ],
-      "discovered_at": 1789579019,
-      "first_seen_block": 64431762,
-      "last_seen_block": 64431762,
-      "lane": "NEW",
-      "last_attempt": 0,
-      "next_due": 1789579108,
+      "next_due": 1789686015,
       "executed_price": null,
       "valuation_conflict": false,
       "valuation_sources": [],
